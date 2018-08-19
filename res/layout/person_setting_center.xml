@@ -1,0 +1,256 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_bar_height"
+        android:background="#3BB715"
+        android:gravity="center_vertical" >
+
+        <include layout="@layout/top_bar_item_person" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="5"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/image_width"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="@dimen/magin_20dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/textfield_search_empty"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center" >
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center|left" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/back"
+                        android:text="修改密碼"
+                        android:textSize="@dimen/login_text_size" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_find_next_holo_dark_right" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/upgrade_version"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/image_width"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="@dimen/magin_20dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/textfield_search_empty"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center" >
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center|left" >
+
+                    <TextView
+                        android:id="@+id/version_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/back"
+                        android:text="版本更新"
+                        android:textSize="@dimen/login_text_size" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_find_next_holo_dark_right" />
+                </LinearLayout>
+            </LinearLayout>
+			
+            <LinearLayout
+                android:id="@+id/shuoming_version"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/image_width"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="@dimen/magin_20dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/textfield_search_empty"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center" >
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center|left" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/back"
+                        android:text="版本說明"
+                        android:textSize="@dimen/login_text_size" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_find_next_holo_dark_right" />
+                </LinearLayout>
+            </LinearLayout>
+            
+            <LinearLayout
+                android:id="@+id/lianxi_women"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/image_width"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="@dimen/magin_20dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/textfield_search_empty"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center" >
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center|left" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/back"
+                        android:text="聯繫我們"
+                        android:textSize="@dimen/login_text_size" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_find_next_holo_dark_right" />
+                </LinearLayout>
+            </LinearLayout>
+            
+            <LinearLayout
+                android:id="@+id/delete"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/image_width"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="@dimen/magin_20dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/textfield_search_empty"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center" >
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center|left" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/back"
+                        android:text="註銷賬號"
+                        android:textSize="@dimen/login_text_size" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_find_next_holo_dark_right" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="6"
+            android:orientation="vertical" >
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

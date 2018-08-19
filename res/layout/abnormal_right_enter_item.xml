@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   android:layout_width="fill_parent"
+    android:layout_height="40dp"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:background="#F5F3F5"
+     >
+    <TextView
+        android:id="@+id/tv_workNB"
+        android:layout_width="0dp"
+        android:layout_weight="0.4"
+        android:gravity="center"
+        android:layout_height="match_parent"
+        android:text="F1330308" />
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="0dp"
+        android:layout_weight="0.6"
+        android:gravity="center"
+        android:layout_height="match_parent"
+        android:text="小明" />
+
+    </LinearLayout>

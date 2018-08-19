@@ -1,0 +1,54 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_e_check"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#006903"
+    android:orientation="vertical"
+    tools:context=".CheckReflowOvenActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.35"
+        android:background="#3BB715"
+        android:gravity="center_vertical" >
+
+        <include
+            android:layout_weight="1"
+            layout="@layout/top_bar_item_pd" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/center_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="5dp"
+        android:layout_weight="5"
+        android:background="@drawable/leave_info_shape"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/leave_info_select_shape"
+            android:orientation="vertical" >
+
+            <include layout="@layout/e_check_item" />
+        </LinearLayout>
+
+        <ExpandableListView
+            android:id="@+id/LTlaptop_list"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/leave_info_select_shape"
+            android:focusable="false"
+            android:groupIndicator="@null" />
+    </LinearLayout>
+
+</LinearLayout>

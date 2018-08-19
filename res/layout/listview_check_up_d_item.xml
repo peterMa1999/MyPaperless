@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/leave_info_shape"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_bar_height"
+        android:background="@drawable/leave_info_select_shape"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/add_old_tvname4"
+            style="@style/add_old_listitem"
+            android:layout_weight="0.5"
+            android:gravity="left"
+            android:paddingLeft="3dp"
+            android:text="樓層:"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/add_old_tv4"
+            style="@style/add_old_listitem"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/add_old_tvname5"
+            style="@style/add_old_listitem"
+            android:layout_weight="0.6"
+            android:text="線別:"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/add_old_tv5"
+            style="@style/add_old_listitem"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/add_old_tvname6"
+            style="@style/add_old_listitem"
+            android:layout_weight="0.6"
+            android:text="工站:"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/add_old_tv6"
+            style="@style/add_old_listitem"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_bar_height"
+        android:background="@drawable/leave_info_select_shape"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/add_old_tvname7"
+            style="@style/add_old_listitem"
+            android:layout_weight="0.5"
+            android:gravity="left"
+            android:paddingLeft="3dp"
+            android:text="設備\n編號"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/add_old_tv7"
+            style="@style/add_old_listitem"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/add_old_tvname8"
+            style="@style/add_old_listitem"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:text="報表\n編號"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/add_old_tv8"
+            style="@style/add_old_listitem"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_bar_height"
+        android:background="@drawable/leave_info_select_shape"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/add_old_tvname9"
+            style="@style/add_old_listitem"
+            android:layout_weight="0.4"
+            android:gravity="left"
+            android:paddingLeft="3dp"
+            android:text="頻率:"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/add_old_tv9"
+            style="@style/add_old_listitem"
+            android:layout_weight="0.5"
+            android:gravity="left" />
+
+        <TextView
+            android:id="@+id/add_old_tvname10"
+            style="@style/add_old_listitem"
+            android:layout_weight="0.4"
+            android:text="報表名:"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/add_old_tv10"
+            style="@style/add_old_listitem"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_bar_height"
+        android:background="@drawable/leave_info_select_shape"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/add_old_tvname1"
+            style="@style/add_old_listitem"
+            android:layout_weight="0.5"
+            android:gravity="left"
+            android:paddingLeft="3dp"
+            android:text="二維碼編號:"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/add_old_tv1"
+            style="@style/add_old_listitem"
+            android:layout_weight="1"
+            android:gravity="left" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@color/green2" />
+
+</LinearLayout>

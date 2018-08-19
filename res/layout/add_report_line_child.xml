@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/person_information_width"
+     >
+
+    <ImageView
+        android:id="@+id/add_line_image_delete"
+        android:layout_width="@dimen/person_information_width"
+        android:layout_height="@dimen/person_information_width"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/delete_report_nor" />
+    <Spinner
+        android:id="@+id/add_report_floor_name_spinner"
+        style="@style/spinner_style"
+        android:layout_width="@dimen/add_line_width_100"
+        android:layout_height="@dimen/person_information_width"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="15dp"
+        android:gravity="center"
+        android:entries="@array/floorname"
+        android:text="child"
+        android:textSize="@dimen/sp_14_1"
+        android:textColor="#0099ff" />
+
+    <EditText
+        android:id="@+id/add_report_line_name_edittext"
+        android:layout_width="@dimen/add_line_width"
+        android:layout_height="@dimen/person_information_width"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="20dp"
+        android:layout_toLeftOf="@+id/add_line_image_delete"
+        android:animationCache="true"
+        android:drawSelectorOnTop="true"
+        android:background="@drawable/bg_edittext_color15"
+        android:ems="10"
+        android:textSize="@dimen/sp_14_1"
+        android:hint="输入点检线别或点检物"
+        android:singleLine="true" >
+        <requestFocus />
+    </EditText>
+
+</RelativeLayout>

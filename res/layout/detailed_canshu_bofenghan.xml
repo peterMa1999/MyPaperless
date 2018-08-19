@@ -1,0 +1,1474 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+   <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_bar_height"
+        android:background="#3BB715"
+        android:gravity="center_vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <ImageButton
+                android:id="@+id/bfh_bt_img_exit"
+                android:layout_width="@dimen/image_width"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:onClick="activity_back"
+                android:src="@drawable/back_click_seletor" />
+
+            <TextView
+                android:id="@+id/bfh_bartitle_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="@string/main"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/title_bar_textsize" />
+
+            
+
+            <TextView
+                android:id="@+id/bfh_textview_update"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/bfh_bt_img_exit"
+                android:onClick="add"
+                android:text="修改記錄"
+                android:textColor="@color/back"
+                android:textSize="@dimen/sp_14_18" />
+
+        </RelativeLayout>
+    </LinearLayout> 
+
+	<ScrollView
+	    android:id="@+id/layout_bfh_detailed"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:layout_margin="3dp"
+                android:layout_height="@dimen/top_bar_height_35_45"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.3"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_14_18"
+                    android:text="BU" />
+
+                <TextView
+                    android:id="@+id/bfh_tv_bu"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.7"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_14_18"
+                    android:text="" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:layout_margin="3dp"
+                android:layout_height="@dimen/top_bar_height_35_45"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.3"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_14_18"
+                    android:text="樓層：" />
+
+                <TextView
+                    android:id="@+id/bfh_tv_buiding"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.7"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_14_18"
+                    android:text="" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:layout_margin="3dp"
+                android:layout_height="@dimen/top_bar_height_35_45"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.3"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_14_18"
+                    android:text="線別：" />
+
+                <TextView
+                    android:id="@+id/bfh_tv_line"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.7"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_14_18"
+                    android:text="" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:layout_margin="3dp"
+                android:layout_height="@dimen/top_bar_height_35_45"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.3"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_14_18"
+                    android:text="機種名：" />
+
+                <TextView
+                    android:id="@+id/bfh_tv_modelname"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.7"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_14_18"
+                    android:text="" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:layout_margin="3dp"
+                android:layout_height="@dimen/top_bar_height_35_45"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.3"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_14_18"
+                    android:text="程式名：" />
+
+                <TextView
+                    android:id="@+id/bfh_tv_productname"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.7"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_14_18"
+                    android:text="" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:layout_margin="3dp"
+                android:layout_height="@dimen/top_bar_height_35_45"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.3"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_14_18"
+                    android:text="BOTPreheatI：" />
+
+                <TextView
+                    android:id="@+id/bfh_tv_botpreheati"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.7"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_14_18"
+                    android:text="" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:layout_margin="3dp"
+                android:layout_height="@dimen/top_bar_height_35_45"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.3"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_14_18"
+                    android:text="BOTPreheatII：" />
+
+                <TextView
+                    android:id="@+id/bfh_tv_botpreheatii"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.7"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_14_18"
+                    android:text="" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:layout_margin="3dp"
+                android:layout_height="@dimen/top_bar_height_35_45"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.3"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_14_18"
+                    android:text="BOTPreheatIII：" />
+
+                <TextView
+                    android:id="@+id/bfh_tv_botpreheatiii"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.7"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_14_18"
+                    android:text="" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:layout_margin="3dp"
+                android:layout_height="@dimen/top_bar_height_35_45"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.3"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_14_18"
+                    android:text="BOTPreheatIV：" />
+
+                <TextView
+                    android:id="@+id/bfh_tv_botpreheativ"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.7"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_14_18"
+                    android:text="" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:layout_margin="3dp"
+                android:layout_height="@dimen/top_bar_height_35_45"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.3"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_14_18"
+                    android:text="TopPreheatI：" />
+
+                <TextView
+                    android:id="@+id/bfh_tv_toppreheati"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.7"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_14_18"
+                    android:text="" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:layout_margin="3dp"
+                android:layout_height="@dimen/top_bar_height_35_45"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.3"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_14_18"
+                    android:text="TopPreheatII：" />
+
+                <TextView
+                    android:id="@+id/bfh_tv_toppreheatii"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.7"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_14_18"
+                    android:text="" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:layout_margin="3dp"
+                android:layout_height="@dimen/top_bar_height_35_45"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.3"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_14_18"
+                    android:text="TopPreheatIII：" />
+
+                <TextView
+                    android:id="@+id/bfh_tv_toppreheatiii"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.7"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_14_18"
+                    android:text="" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:layout_margin="3dp"
+                android:layout_height="@dimen/top_bar_height_35_45"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.3"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_14_18"
+                    android:text="TopPreheatIV：" />
+
+                <TextView
+                    android:id="@+id/bfh_tv_toppreheativ"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.7"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_14_18"
+                    android:text="" />
+            </LinearLayout>
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:layout_margin="3dp"
+                android:layout_height="@dimen/top_bar_height_35_45"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.3"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_14_18"
+                    android:text="ChainSpeedAfter：" />
+
+                <TextView
+                    android:id="@+id/bfh_tv_chainspeedafter"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.7"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_14_18"
+                    android:text="" />
+            </LinearLayout>
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:layout_margin="3dp"
+                android:layout_height="@dimen/top_bar_height_35_45"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.3"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_14_18"
+                    android:text="ChainSpeed：" />
+
+                <TextView
+                    android:id="@+id/bfh_tv_chainspeed"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.7"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_14_18"
+                    android:text="" />
+            </LinearLayout>
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:layout_margin="3dp"
+                android:layout_height="@dimen/top_bar_height_35_45"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.3"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_14_18"
+                    android:text="TinTemperature：" />
+
+                <TextView
+                    android:id="@+id/bfh_tv_tintemperature"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.7"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_14_18"
+                    android:text="" />
+            </LinearLayout>
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:layout_margin="3dp"
+                android:layout_height="@dimen/top_bar_height_35_45"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.3"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_14_18"
+                    android:text="TinBathHeight：" />
+
+                <TextView
+                    android:id="@+id/bfh_tv_tinbathheight"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.7"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_14_18"
+                    android:text="" />
+            </LinearLayout>
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:layout_margin="3dp"
+                android:layout_height="@dimen/top_bar_height_35_45"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.3"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_14_18"
+                    android:text="TurbulentWave：" />
+
+                <TextView
+                    android:id="@+id/bfh_tv_turbulentwave"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.7"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_14_18"
+                    android:text="" />
+            </LinearLayout>
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:layout_margin="3dp"
+                android:layout_height="@dimen/top_bar_height_35_45"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.3"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_14_18"
+                    android:text="AdvectionWave：" />
+
+                <TextView
+                    android:id="@+id/bfh_tv_advectionwave"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.7"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_14_18"
+                    android:text="" />
+            </LinearLayout>
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:layout_margin="3dp"
+                android:layout_height="@dimen/top_bar_height_35_45"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.3"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_14_18"
+                    android:text="TinBarType：" />
+
+                <TextView
+                    android:id="@+id/bfh_tv_tinbartype"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.7"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_14_18"
+                    android:text="" />
+            </LinearLayout>
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:layout_margin="3dp"
+                android:layout_height="@dimen/top_bar_height_35_45"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.3"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_14_18"
+                    android:text="FluxType：" />
+
+                <TextView
+                    android:id="@+id/bfh_tv_fluxtype"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.7"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_14_18"
+                    android:text="" />
+            </LinearLayout>
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:layout_margin="3dp"
+                android:layout_height="@dimen/top_bar_height_35_45"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.3"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_14_18"
+                    android:text="FluxFlow：" />
+
+                <TextView
+                    android:id="@+id/bfh_tv_fluxflow"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.7"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_14_18"
+                    android:text="" />
+            </LinearLayout>
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:layout_margin="3dp"
+                android:layout_height="@dimen/top_bar_height_35_45"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.3"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_14_18"
+                    android:text="NozzleAirPressure：" />
+
+                <TextView
+                    android:id="@+id/bfh_tv_nozzleairpressure"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.7"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_14_18"
+                    android:text="" />
+            </LinearLayout>
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:layout_margin="3dp"
+                android:layout_height="@dimen/top_bar_height_35_45"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.3"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_14_18"
+                    android:text="TotalAirPressure：" />
+
+                <TextView
+                    android:id="@+id/bfh_tv_totalairpressure"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.7"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_14_18"
+                    android:text="" />
+            </LinearLayout>
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:layout_margin="3dp"
+                android:layout_height="@dimen/top_bar_height_35_45"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.3"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_14_18"
+                    android:text="TankAirPressure：" />
+
+                <TextView
+                    android:id="@+id/bfh_tv_tankairpressure"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.7"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_14_18"
+                    android:text="" />
+            </LinearLayout>
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:layout_margin="3dp"
+                android:layout_height="@dimen/top_bar_height_35_45"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.3"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_14_18"
+                    android:text="FluxProportion：" />
+
+                <TextView
+                    android:id="@+id/bfh_tv_fluxproportion"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.7"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_14_18"
+                    android:text="" />
+            </LinearLayout>
+            
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:layout_margin="3dp"
+                android:layout_height="@dimen/top_bar_height_35_45"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.3"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_14_18"
+                    android:text="最後修改時間：" />
+
+                <TextView
+                    android:id="@+id/tv_last_editdate"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.7"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_14_18"
+                    android:text="" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:layout_margin="3dp"
+                android:layout_height="@dimen/top_bar_height_35_45"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.3"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_14_18"
+                    android:text="操作類型：" />
+
+                <TextView
+                    android:id="@+id/tv_last_updatetype"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.7"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_14_18"
+                    android:text="" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:layout_margin="3dp"
+                android:layout_height="@dimen/top_bar_height_35_45"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.3"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_14_18"
+                    android:text="修改人：" />
+
+                <TextView 
+                    android:id="@+id/tv_bfh_update_person"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.7"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_14_18"
+                    android:text="" />
+            </LinearLayout>
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:layout_margin="3dp"
+                android:layout_height="@dimen/top_bar_height_35_45"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/bt_bfh_detailed_update"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/person_submit"
+                    android:onClick="add"
+                    android:text="修改" />
+                
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:layout_margin="3dp"
+                android:layout_height="@dimen/top_bar_height_35_45"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/bt_bfh_detailed_delete"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/person_submit"
+                    android:layout_height="wrap_content"
+                    android:onClick="add"
+                    android:text="刪除" />
+                
+            </LinearLayout>
+            
+        </LinearLayout>
+        </ScrollView>
+        <ScrollView
+        android:id="@+id/layout_bfh_operaction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:layout_margin="3dp"
+                android:layout_height="@dimen/top_bar_height_35_45"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.3"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_14_18"
+                    android:text="樓層：" />
+
+                <Spinner
+                    android:id="@+id/sp_bfh_floor"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.7"
+                    android:layout_height="wrap_content"
+                    android:animationCache="true"
+            		android:background="@drawable/nt_wangdianditu_cbx_bg"
+            		android:drawSelectorOnTop="true"
+            		android:paddingLeft="5dip" />
+            </LinearLayout>
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:layout_margin="3dp"
+                android:layout_height="@dimen/top_bar_height_35_45"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.3"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_14_18"
+                    android:text="線別：" />
+
+                <Spinner
+                    android:id="@+id/sp_bfh_line"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.7"
+                    android:layout_height="wrap_content"
+                    android:animationCache="true"
+            		android:background="@drawable/nt_wangdianditu_cbx_bg"
+            		android:drawSelectorOnTop="true"
+            		android:paddingLeft="5dip" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:layout_margin="3dp"
+                android:layout_height="@dimen/top_bar_height_35_45"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.3"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_14_18"
+                    android:text="機種名：" />
+
+                <EditText
+                    android:maxLines="2"
+                    android:id="@+id/bfh_ed_modelname"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.7"
+                    android:maxLength="50"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_14_18"
+                    android:text="" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:layout_margin="3dp"
+                android:layout_height="@dimen/top_bar_height_35_45"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.3"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_14_18"
+                    android:maxLength="50"
+                    android:text="程式名：" />
+
+                <EditText
+                    android:maxLines="2"
+                    android:id="@+id/bfh_ed_productname"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.7"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_14_18"
+                    android:text="" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:layout_margin="3dp"
+                android:layout_height="@dimen/top_bar_height_35_45"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.3"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_14_18"
+                    android:text="BOTPreheatI：" />
+
+                <EditText
+                    android:maxLines="2"
+                    android:id="@+id/bfh_ed_botpreheati"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.7"
+                    android:maxLength="10"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_14_18"
+                    android:text="" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:layout_margin="3dp"
+                android:layout_height="@dimen/top_bar_height_35_45"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.3"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_14_18"
+                    android:text="BOTPreheatII：" />
+
+                <EditText
+                    android:maxLines="2"
+                    android:id="@+id/bfh_ed_botpreheatii"
+                    android:layout_width="0dp"
+                    android:maxLength="10"
+                    android:layout_weight="0.7"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_14_18"
+                    android:text="" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:layout_margin="3dp"
+                android:layout_height="@dimen/top_bar_height_35_45"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.3"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_14_18"
+                    android:text="BOTPreheatIII：" />
+
+                <EditText
+                    android:maxLines="2"
+                    android:id="@+id/bfh_ed_botpreheatiii"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.7"
+                    android:maxLength="10"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_14_18"
+                    android:text="" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:layout_margin="3dp"
+                android:layout_height="@dimen/top_bar_height_35_45"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.3"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_14_18"
+                    android:text="BOTPreheatIV：" />
+
+                <EditText
+                    android:maxLines="2"
+                    android:id="@+id/bfh_ed_botpreheativ"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.7"
+                    android:maxLength="10"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_14_18"
+                    android:text="" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:layout_margin="3dp"
+                android:layout_height="@dimen/top_bar_height_35_45"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.3"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_14_18"
+                    android:text="TopPreheatI：" />
+
+                <EditText
+                    android:maxLines="2"
+                    android:id="@+id/bfh_ed_toppreheati"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.7"
+                    android:maxLength="10"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_14_18"
+                    android:text="" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:layout_margin="3dp"
+                android:layout_height="@dimen/top_bar_height_35_45"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.3"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_14_18"
+                    android:text="TopPreheatII：" />
+
+                <EditText
+                    android:maxLines="2"
+                    android:id="@+id/bfh_ed_toppreheatii"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.7"
+                    android:maxLength="10"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_14_18"
+                    android:text="" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:layout_margin="3dp"
+                android:layout_height="@dimen/top_bar_height_35_45"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.3"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_14_18"
+                    android:text="TopPreheatIII：" />
+
+                <EditText
+                    android:maxLines="2"
+                    android:id="@+id/bfh_ed_toppreheatiii"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.7"
+                    android:maxLength="10"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_14_18"
+                    android:text="" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:layout_margin="3dp"
+                android:layout_height="@dimen/top_bar_height_35_45"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.3"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_14_18"
+                    android:text="TopPreheatIV：" />
+
+                <EditText
+                    android:maxLines="2"
+                    android:id="@+id/bfh_ed_toppreheativ"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.7"
+                    android:maxLength="10"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_14_18"
+                    android:text="" />
+            </LinearLayout>
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:layout_margin="3dp"
+                android:layout_height="@dimen/top_bar_height_35_45"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.3"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_14_18"
+                    android:text="ChainSpeedAfter：" />
+
+                <EditText
+                    android:maxLines="2"
+                    android:id="@+id/bfh_ed_chainspeedafter"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.7"
+                    android:maxLength="10"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_14_18"
+                    android:text="" />
+            </LinearLayout>
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:layout_margin="3dp"
+                android:layout_height="@dimen/top_bar_height_35_45"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.3"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_14_18"
+                    android:text="ChainSpeed：" />
+
+                <EditText
+                    android:maxLines="2"
+                    android:id="@+id/bfh_ed_chainspeed"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.7"
+                    android:maxLength="10"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_14_18"
+                    android:text="" />
+            </LinearLayout>
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:layout_margin="3dp"
+                android:layout_height="@dimen/top_bar_height_35_45"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.3"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_14_18"
+                    android:text="TinTemperature：" />
+
+                <EditText
+                    android:maxLines="2"
+                    android:id="@+id/bfh_ed_tintemperature"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.7"
+                    android:maxLength="10"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_14_18"
+                    android:text="" />
+            </LinearLayout>
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:layout_margin="3dp"
+                android:layout_height="@dimen/top_bar_height_35_45"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.3"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_14_18"
+                    android:text="TinBathHeight：" />
+
+                <EditText
+                    android:maxLines="2"
+                    android:id="@+id/bfh_ed_tinbathheight"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.7"
+                    android:maxLength="10"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_14_18"
+                    android:text="" />
+            </LinearLayout>
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:layout_margin="3dp"
+                android:layout_height="@dimen/top_bar_height_35_45"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.3"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_14_18"
+                    android:text="TurbulentWave：" />
+
+                <EditText
+                    android:maxLines="2"
+                    android:id="@+id/bfh_ed_turbulentwave"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.7"
+                    android:maxLength="10"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_14_18"
+                    android:text="" />
+            </LinearLayout>
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:layout_margin="3dp"
+                android:layout_height="@dimen/top_bar_height_35_45"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.3"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_14_18"
+                    android:text="AdvectionWave：" />
+
+                <EditText
+                    android:maxLines="2"
+                    android:id="@+id/bfh_ed_advectionwave"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.7"
+                    android:maxLength="10"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_14_18"
+                    android:text="" />
+            </LinearLayout>
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:layout_margin="3dp"
+                android:layout_height="@dimen/top_bar_height_35_45"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.3"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_14_18"
+                    android:text="TinBarType：" />
+
+                <EditText
+                    android:maxLines="2"
+                    android:id="@+id/bfh_ed_tinbartype"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.7"
+                    android:maxLength="30"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_14_18"
+                    android:text="" />
+            </LinearLayout>
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:layout_margin="3dp"
+                android:layout_height="@dimen/top_bar_height_35_45"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.3"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_14_18"
+                    android:text="FluxType：" />
+
+                <EditText
+                    android:maxLines="2"
+                    android:id="@+id/bfh_ed_fluxtype"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.7"
+                    android:maxLength="30"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_14_18"
+                    android:text="" />
+            </LinearLayout>
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:layout_margin="3dp"
+                android:layout_height="@dimen/top_bar_height_35_45"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.3"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_14_18"
+                    android:text="FluxFlow：" />
+
+                <EditText
+                    android:maxLines="2"
+                    android:id="@+id/bfh_ed_fluxflow"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.7"
+                    android:maxLength="40"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_14_18"
+                    android:text="" />
+            </LinearLayout>
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:layout_margin="3dp"
+                android:layout_height="@dimen/top_bar_height_35_45"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.3"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_14_18"
+                    android:text="NozzleAirPressure：" />
+
+                <EditText
+                    android:maxLines="2"
+                    android:id="@+id/bfh_ed_nozzleairpressure"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.7"
+                    android:maxLength="10"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_14_18"
+                    android:text="" />
+            </LinearLayout>
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:layout_margin="3dp"
+                android:layout_height="@dimen/top_bar_height_35_45"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.3"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_14_18"
+                    android:text="TotalAirPressure：" />
+
+                <EditText
+                    android:maxLines="2"
+                    android:id="@+id/bfh_ed_totalairpressure"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.7"
+                    android:maxLength="10"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_14_18"
+                    android:text="" />
+            </LinearLayout>
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:layout_margin="3dp"
+                android:layout_height="@dimen/top_bar_height_35_45"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.3"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_14_18"
+                    android:text="TankAirPressure：" />
+
+                <EditText
+                    android:maxLines="2"
+                    android:id="@+id/bfh_ed_tankairpressure"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.7"
+                    android:maxLength="10"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_14_18"
+                    android:text="" />
+            </LinearLayout>
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:layout_margin="3dp"
+                android:layout_height="@dimen/top_bar_height_35_45"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.3"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_14_18"
+                    android:text="FluxProportion：" />
+
+                <EditText
+                    android:maxLines="2"
+                    android:id="@+id/bfh_ed_fluxproportion"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.7"
+                    android:maxLength="10"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_14_18"
+                    android:text="" />
+            </LinearLayout>
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:layout_margin="3dp"
+                android:layout_height="@dimen/top_bar_height_35_45"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.3"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_14_18"
+                    android:text="備註：" />
+
+                <EditText
+                    android:maxLines="2"
+                    android:id="@+id/bfh_ed_beizhu"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.7"
+                    android:maxLength="10"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_14_18"
+                    android:text="" />
+            </LinearLayout>
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:layout_margin="3dp"
+                android:layout_height="@dimen/top_bar_height_35_45"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/bt_bfh_detailed_submit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/person_submit"
+                    android:onClick="add"
+                    android:text="確定" />
+                
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

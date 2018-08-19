@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 检查单位item布局 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/listview_item_pressed_style"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingBottom="5dp"
+    android:paddingLeft="8dp"
+    android:paddingRight="2dp"
+    android:paddingTop="5dp" >
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/LoCeng"
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="0.7"
+                android:clickable="false"
+                android:gravity="left|center"
+                android:text="0"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/Report_name"
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:clickable="false"
+                android:gravity="center"
+                android:text="1"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/Line_level"
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="0.9"
+                android:clickable="false"
+                android:gravity="left|center"
+                android:text="2"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/Control_no"
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:clickable="false"
+                android:gravity="center"
+                android:text="3"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.2"
+        android:gravity="center" >
+
+        <CheckBox
+            android:id="@+id/codeCheckBox"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@drawable/checkbox_green_style"
+            android:focusable="false" />
+    </LinearLayout>
+
+</LinearLayout>

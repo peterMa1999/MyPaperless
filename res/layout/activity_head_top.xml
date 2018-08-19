@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/top_bar_height"
+    android:background="#3BB715" >
+    
+<TextView
+        android:id="@+id/head_title"
+        style="@style/head_text_styles"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="@string/app_name" />
+
+    <ImageButton
+        android:id="@+id/head_back"
+        style="@style/head_btn_styles"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="5dp"
+        android:onClick="HeadBack"
+        android:src="@drawable/back_click_seletor" />
+
+    <ImageButton
+        android:id="@+id/head_next"
+        style="@style/head_btn_styles"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"
+        android:onClick="HeadNext"
+        android:src="@null" />
+    
+</RelativeLayout>

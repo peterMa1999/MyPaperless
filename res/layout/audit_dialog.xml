@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" 
+    android:background="@drawable/linerlayout_shape"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+         >
+          <TextView
+	        android:id="@+id/title"
+	        android:layout_width="fill_parent"
+	        android:layout_height="40.0dip"
+	        android:layout_marginTop="15dp"
+	        android:gravity="center"
+	        android:text="修改"
+	        android:textColor="#3BB715"
+	        android:textSize="@dimen/sp_18"
+	        android:visibility="visible" 
+	        />
+        
+    
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:orientation="horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        >
+       
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/modify" />
+
+        <TextView
+            android:id="@+id/textViewTotal1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/sp_16_20"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:orientation="horizontal"
+        android:layout_marginLeft="20dp">
+
+        <ImageView
+            android:id="@+id/ImageView01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/modify" />
+
+        <TextView
+            android:id="@+id/textViewTotal2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView" 
+            android:textColor="#ffffff"
+             android:textSize="@dimen/sp_16_20"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+     </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp">
+        
+
+         <EditText
+            android:id="@+id/editTotal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:textSize="@dimen/sp_16_20"
+            android:background="@drawable/bt_shape_log" />
+
+        
+
+   
+    </LinearLayout>
+
+   
+</LinearLayout>

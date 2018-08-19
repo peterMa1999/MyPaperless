@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/image_width"
+         >
+
+        <include layout="@layout/activity_head_top" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/wlayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/add_line_width_80"
+        android:layout_marginTop="2dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/image_width"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="报表编号: "
+                    android:textColor="#000000"
+                    android:textSize="@dimen/sp_14_1"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/RNO_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/person_information_width"
+                    android:background="@drawable/edit_shape"
+                    android:gravity="center"
+                    android:hint="IPQC"
+                    android:textSize="@dimen/sp_14_1"
+                    android:singleLine="true"
+                    android:textColor="#000000" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="报表名称: "
+                    android:textColor="#000000"
+                    android:textSize="@dimen/sp_14_1"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/RNO_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/person_information_width"
+                    android:background="@drawable/edit_shape"
+                    android:gravity="center"
+                    android:hint="PACK開換線點檢表"
+                    android:textSize="@dimen/sp_14_1"
+                    android:singleLine="true"
+                    android:textColor="#000000" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/image_width"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"
+                android:gravity="center"
+                android:text="點檢頻率:"
+                android:textColor="#000000"
+                android:textSize="@dimen/sp_14_1"
+                android:textStyle="bold" />
+
+            <AutoCompleteTextView
+                android:id="@+id/rate_edit"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/person_information_width"
+                android:layout_weight="0.4"
+                android:background="@drawable/edit_shape"
+                android:completionThreshold="1"
+                android:gravity="center"
+                android:hint="1次/2H"
+                android:textSize="@dimen/sp_14_1"
+                android:singleLine="true"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.2"
+                android:gravity="center"
+                android:text="工站:"
+                android:textColor="#000000"
+                android:textSize="@dimen/sp_14_1"
+                android:textStyle="bold" />
+
+            <AutoCompleteTextView
+                android:id="@+id/check_section"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/person_information_width"
+                android:layout_weight="0.4"
+                android:background="@drawable/edit_shape"
+                android:completionThreshold="1"
+                android:gravity="center"
+                android:hint="SMT"
+                android:textSize="@dimen/sp_14_1"
+                android:singleLine="true"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"
+                android:gravity="center"
+                android:text="审核部門:"
+                android:textColor="#000000"
+                android:textSize="@dimen/sp_14_1"
+                android:textStyle="bold" />
+
+            <Spinner
+               android:id="@+id/check_department"
+	           android:layout_width="0dp"
+	           android:layout_height="50dp"
+	           android:layout_weight="0.4"
+	           android:paddingLeft="5dip"
+	           android:animationCache="true"
+	           android:background="@drawable/nt_wangdianditu_cbx_bg"
+	    	   android:drawSelectorOnTop="true" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/add_report_line_mfgvii"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/add_line_width"
+        android:layout_margin="5dp"
+        android:visibility="gone" >
+
+        <ListView
+            android:id="@+id/add_listview_linename"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/add_line_width_100" >
+        </ListView>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/add_listview_linename"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/button_click_seletor"
+            android:gravity="center"
+            android:visibility="visible" >
+
+            <Button
+           	    android:id="@+id/image_add_linename"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/person_information_width_25"
+                android:textSize="@dimen/sp_14_18"
+                android:background="#3BB715"
+                android:text="添加樓層線別或點檢物" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <ExpandableListView
+            android:id="@+id/expandablelistview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:groupIndicator="@null" >
+        </ExpandableListView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/image_add_linear"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:background="#3BB715"
+        android:gravity="center" >
+
+        <ImageView
+            android:layout_width="@dimen/person_information_width"
+            android:layout_height="@dimen/person_information_width"
+            android:src="@drawable/map_ic_zoom_in" />
+    </LinearLayout>
+
+</LinearLayout>

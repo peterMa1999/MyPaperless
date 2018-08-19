@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_chperson_no"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="順序" />
+
+        <TextView
+            android:id="@+id/tv_chperson_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="審核人名" />
+
+        <TextView
+            android:id="@+id/tv_chperson_team"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="所屬單位" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:id="@+id/image_bt_shangyi"
+                android:layout_width="@dimen/top_bar_height_30_40"
+                android:layout_height="@dimen/top_bar_height_30_40"
+                android:background="@null"
+                android:gravity="center"
+                android:src="@drawable/shangyi_click_seletor" />
+
+            <ImageButton
+                android:id="@+id/image_bt_xiayi"
+                android:layout_width="@dimen/top_bar_height_30_40"
+                android:layout_height="@dimen/top_bar_height_30_40"
+                android:background="@null"
+                android:gravity="center"
+                android:src="@drawable/xiayi_click_seletor" />
+
+            <ImageButton
+                android:id="@+id/image_bt_delete"
+                android:layout_width="@dimen/top_bar_height_30_40"
+                android:layout_height="@dimen/top_bar_height_30_40"
+                android:background="@null"
+                android:gravity="center"
+                android:src="@drawable/delete_click_seletor" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/message_more2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/message_more_parent"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/node_numbertv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:text="节数"
+                android:textColor="@color/blue"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/Check_numbertv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:textColor="@color/back"
+                android:text="点检编号"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/produce_persontv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="审核人"
+                android:textColor="@color/back"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/state_tv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.75"
+                android:gravity="center"
+                android:text="状态"
+                android:textColor="@color/color1"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/image_dowbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"    
+              android:background="@drawable/btn_up"
+              />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.5dp"
+            android:background="@color/green" />
+    </LinearLayout>
+
+</LinearLayout>

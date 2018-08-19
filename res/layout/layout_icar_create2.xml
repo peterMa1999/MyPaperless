@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+  <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/editbox_background_normal"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@color/blue"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="5dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_step2"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/blue2"
+                    android:text="@string/text_part1"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <TableLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:stretchColumns="1,3" >
+
+                <TableRow android:gravity="center" >
+
+                    <TextView
+                        android:id="@+id/icar_create_t6"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/text_07"
+                        android:textColor="@color/color1"
+                        android:textSize="12sp" />
+
+                    <!-- Site Location厂区: -->
+
+                    <Spinner
+                        android:id="@+id/icar_create_spinner1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:entries="@array/icar_create_spinner1" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/text_xing"
+                        android:textColor="@color/color1"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/icar_create_t7"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/text_08"
+                        android:textColor="@color/color1"
+                        android:textSize="12sp" />
+                    <!-- BU: -->
+
+                    <Spinner
+                        android:id="@+id/icar_create_spinner2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:entries="@array/icar_create_spinner2" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/text_xing"
+                        android:textColor="@color/color1"
+                        android:textSize="15sp" />
+                </TableRow>
+
+                <TableRow android:gravity="center" >
+
+                    <TextView
+                        android:id="@+id/icar_create_t8"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/text_09"
+                        android:textColor="@color/color1"
+                        android:textSize="12sp" />
+                    <!-- MFG制造处: -->
+
+                    <Spinner
+                        android:id="@+id/icar_create_spinner3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:entries="@array/icar_create_spinner3" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/text_xing"
+                        android:textColor="@color/color1"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/icar_create_t9"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/text_10"
+                        android:textColor="@color/color1"
+                        android:textSize="12sp" />
+                    <!-- SBU(小BU): -->
+
+                    <Spinner
+                        android:id="@+id/icar_create_spinner4"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:entries="@array/icar_create_spinner4" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text=""
+                        android:textSize="15sp" />
+                </TableRow>
+            </TableLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/icar_create_t10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_11"
+                    android:textColor="@color/color1"
+                    android:textSize="12sp" />
+                <!-- Problem type问题类型: -->
+
+                <Spinner
+                    android:id="@+id/icar_create_spinner5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:entries="@array/icar_create_spinner5" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/text_xing"
+                    android:textColor="@color/color1"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/icar_create_t11"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/text_12"
+                    android:textColor="@color/color1"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:id="@+id/icar_create_ed4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/text_xing"
+                    android:textColor="@color/color1"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/icar_create_t12"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/text_13"
+                    android:textColor="@color/color1"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:id="@+id/icar_create_ed5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/blue2"
+                    android:text="@string/text_part2"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:text="@string/text_explain1"
+                    android:textColor="@color/color1"
+                    android:textSize="12sp" />
+
+                <TableLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TableRow android:gravity="center" >
+
+                        <TextView
+                            android:id="@+id/icar_create_t13"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/text_14"
+                            android:textColor="@color/back"
+                            android:textSize="12sp" />
+                        <!-- Test Station1: -->
+
+                        <Spinner
+                            android:id="@+id/icar_create_spinner6"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:entries="@array/icar_create_spinner6" />
+
+                        <TextView
+                            android:id="@+id/icar_create_t14"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/text_15"
+                            android:textColor="@color/back"
+                            android:textSize="12sp" />
+
+                        <EditText
+                            android:id="@+id/icar_create_ed6"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:numeric="integer"
+                            android:hint="必须为整数"
+                            />
+                    </TableRow>
+
+                    <TableRow android:gravity="center" >
+
+                        <TextView
+                            android:id="@+id/icar_create_t15"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/text_16"
+                            android:textColor="@color/back"
+                            android:textSize="12sp" />
+
+                        <EditText
+                            android:id="@+id/icar_create_ed7"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:numeric="integer"
+                            android:hint="必须为整数" 
+                            />
+
+                        <TextView
+                            android:id="@+id/icar_create_t16"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/text_17"
+                            android:textColor="@color/back"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/icar_create_ed8"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:text=""
+                            android:hint="点击自动获取数据"
+                            android:gravity="center" 
+                            />
+                    </TableRow>
+                </TableLayout>
+
+                <Button
+                    android:id="@+id/icar_create_add1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dp"
+                    android:text="@string/button_Submit3"
+                    android:textSize="15sp" >
+                </Button>
+            </LinearLayout>
+        </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,30 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <TextView
+        android:id="@+id/bartitle_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="@string/main"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/sp_18_seletor" />
+
+    <ImageButton
+        android:id="@+id/bt_img_exit"
+        style="@style/head_btn_styles"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="5dp"
+        android:onClick="activity_back"
+        android:src="@drawable/back_click_seletor" />
+
+    <Button
+        android:id="@+id/btn_submit"
+        style="@style/head_btn_styles"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/examine_ok_72" />
+
+</RelativeLayout>

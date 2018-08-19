@@ -1,0 +1,125 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#006903"
+    android:orientation="vertical"
+    android:id="@+id/activity_check_lable_machine"
+    tools:context=".CheckAOIActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.35"
+        android:background="#3BB715"
+        android:gravity="center_vertical" >
+
+        <include
+            android:layout_weight="1"
+            layout="@layout/top_bar_item_pd" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="5dp"
+        android:layout_weight="5"
+        android:background="@drawable/leave_info_shape"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/leave_info_select_shape"
+            android:orientation="vertical" >
+
+            <include layout="@layout/check_foreign_pd_item" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Brand:"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/electric_text" />
+
+                <TextView
+                    android:id="@+id/tv_customer"
+                    android:layout_width="0dp"
+                    android:layout_height="25dp"
+                    android:layout_weight="2"
+                    android:background="@drawable/shape_electric_textview"
+                    android:gravity="center"
+                    android:textColor="#EF1268"
+                    android:textSize="@dimen/electric_text" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1.5" />
+            </LinearLayout>
+
+            <View style="@style/electric_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Model #:"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/electric_text" />
+
+                <TextView
+                    android:id="@+id/tv_model"
+                    android:layout_width="0dp"
+                    android:layout_height="25dp"
+                    android:layout_weight="2"
+                    android:background="@drawable/shape_electric_textview"
+                    android:gravity="center"
+                    android:textColor="#EF1268"
+                    android:textSize="@dimen/electric_text" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1.5" />
+            </LinearLayout>
+
+            <View style="@style/electric_line" />
+        </LinearLayout>
+
+        <ExpandableListView
+            android:id="@+id/LTlaptop_list"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/leave_info_select_shape"
+            android:focusable="false"
+            android:groupIndicator="@null" />
+    </LinearLayout>
+
+</LinearLayout>

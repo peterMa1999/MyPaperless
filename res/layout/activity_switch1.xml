@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F3F5"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/person_information_width"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:text="切换BU"
+        android:textColor="#0F9F27"
+        android:textSize="@dimen/sp_20"
+        android:visibility="visible" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/person_information_width" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0.3" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="BU："
+                android:textColor="@color/color1"
+                android:textSize="@dimen/sp_16_20" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.4" >
+
+            <Spinner
+                android:id="@+id/BU_spinner"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:background="@drawable/line_sp_bg" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3" >
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/person_information_width" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0.3" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="MFG："
+                android:textColor="@color/color1"
+                android:textSize="@dimen/sp_16_20" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.4" >
+			
+            <Spinner
+                android:id="@+id/MFG_spinner"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/line_sp_bg" />
+            
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3" >
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/person_information_width" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0.3" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="SBU："
+                android:textColor="@color/color1"
+                android:textSize="@dimen/sp_16_20" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.4" >
+
+            <Spinner
+                android:id="@+id/SBU_spinner"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/line_sp_bg" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3" >
+        </LinearLayout>
+        
+    </LinearLayout>
+	<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/person_information_width" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0.3" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="TEAM："
+                android:textColor="@color/color1"
+                android:textSize="@dimen/sp_16_20" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.4" >
+			
+			<Spinner
+                android:id="@+id/TEAM_spinner"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/line_sp_bg" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3" >
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,26 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="main">30sp</dimen>
+    <dimen name="text_size_24">24sp</dimen>
+	<dimen name="stroke_width">5dp</dimen>
+    <declare-styleable name="FilterLayout">
+        <attr name="android:gravity" />
+    </declare-styleable>
+    <declare-styleable name="FilterLayout_Layout">
+        <attr name="android:layout_gravity" />
+    </declare-styleable>
+
+    <!-- activity_check_electric_screwdriver.xml -->
+    <dimen name="electric_text">18sp</dimen>
+    <dimen name="electric_commit_btn">25sp</dimen>
+
+    <!-- activity_check_reflow_oven.xml -->
+    <dimen name="reflow_title">30sp</dimen>
+
+    <!-- activity_person_my_message.xml -->
+	<dimen name="img_w_120">120dp</dimen>
+	<dimen name="img_h_120">120dp</dimen>
+</resources>

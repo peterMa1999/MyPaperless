@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="35dp"
+    android:background="#006903"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_bar_height"
+        android:background="#3BB715"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/dialog_title_check_up"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:text="title"
+            android:textColor="@color/white"
+            android:textSize="16sp" >
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="5"
+        android:orientation="vertical" >
+
+        <ListView
+            android:id="@+id/check_up_dialoglistView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+        </ListView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/dialog_time_check_up"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="5dp"
+            android:background="#3BB715"
+            android:gravity="center"
+            android:text="選擇補點檢的時間"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/dialog_ok_check_up"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text="確定"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</LinearLayout>

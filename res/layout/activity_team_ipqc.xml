@@ -1,0 +1,101 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_bar_height"
+        android:background="#3BB715"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/head_title"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/top_bar_height_35"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/sp_20" />
+
+        <ImageButton
+            android:id="@+id/activity_back"
+            android:layout_width="@dimen/top_bar_height_35"
+            android:layout_height="@dimen/top_bar_height_35"
+            android:layout_alignBottom="@+id/textView1"
+            android:layout_alignParentLeft="true"
+            android:background="@null"
+            android:onClick="back"
+            android:src="@drawable/back_click_seletor" />
+
+        <ImageButton
+            android:id="@+id/imgSwitch"
+            android:layout_width="@dimen/imageview_24_28"
+            android:layout_height="@dimen/imageview_24_28"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/person_add"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1"
+        android:background="#ECEFF0" >
+
+        <ListView
+            android:id="@+id/lvListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:dividerHeight="1px"
+            android:fadingEdge="none" >
+        </ListView>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#DADBDA" />
+
+    <LinearLayout
+        android:id="@+id/ipqc_lin"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#0BA683"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <Button
+            android:id="@+id/btnSelectAll"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/btn_pressed_style"
+            android:text="全选"
+            android:visibility="gone"
+            android:textColor="#FDFEFE"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#DADBDA" />
+
+        <Button
+            android:id="@+id/btnMaintenance"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/btn_pressed_style"
+            android:text="选择时间段"
+            android:textColor="#FDFEFE"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</LinearLayout>

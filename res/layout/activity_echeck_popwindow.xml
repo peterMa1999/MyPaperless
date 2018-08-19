@@ -1,0 +1,164 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/popwindow_shape_white"
+    android:orientation="vertical">
+
+		<LinearLayout
+		    android:layout_width="match_parent"
+       		android:layout_height="0dp"
+       		android:layout_weight="1"
+		    android:gravity="right|center_vertical" >
+		<CheckBox
+			    android:id="@+id/abnormal_cbox"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:text="提交异常" />
+
+			<LinearLayout
+			    android:layout_width="100dp"
+			    android:layout_height="match_parent" >
+			</LinearLayout>
+
+		 <ImageButton
+		   android:id="@+id/closePopwindow"
+           android:layout_width="@dimen/image_48"
+           android:layout_height="@dimen/image_48"
+           android:background="@null"
+           android:src="@drawable/close_popwindow" />
+		 <ImageButton
+		   android:id="@+id/OK"
+		   android:layout_marginRight="5dp"
+           android:layout_width="@dimen/image_48"
+           android:layout_height="@dimen/image_48"
+           android:background="@null"
+           android:src="@drawable/submit_click_seletor4" />
+		</LinearLayout>
+
+    <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="@dimen/top_bar_height_35" 
+       android:gravity="center_vertical"
+       android:layout_marginTop="5dp"
+       android:orientation="horizontal">
+
+       <Spinner
+           android:id="@+id/spinner_check_name"
+           android:layout_width="0dp"
+           android:layout_marginLeft="10dp"
+		   android:layout_height="match_parent"
+           android:layout_weight="0.35"
+           android:entries="@array/CHECK_NAME"
+           android:spinnerMode="dialog"
+           android:background="@drawable/nt_wangdianditu_cbx_bg" />
+
+       <View
+           android:id="@+id/view1"
+           android:layout_width="0dp"
+           android:layout_height="match_parent"
+           android:layout_weight="0.55" />
+
+       <ImageButton
+           android:id="@+id/imageButton_add"
+           android:layout_width="0dp"
+           android:layout_height="match_parent"
+           android:layout_weight="0.15"
+           android:background="@null" />
+       <ImageButton
+           android:id="@+id/imageButton1_detele"
+           android:layout_width="0dp"
+           android:layout_height="match_parent"
+           android:layout_weight="0.15"
+           android:background="@null"
+           />
+   </LinearLayout>
+
+   <LinearLayout 
+       android:layout_marginTop="20dp"
+       android:layout_width="match_parent"
+       android:layout_height="0dp"
+       android:layout_weight="5">
+    <ListView
+        android:id="@+id/listViewperson"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:divider="@drawable/card_xuxian"
+        android:dividerHeight="2dp"
+        android:layout_marginBottom="15dp"
+        android:paddingLeft="5dp" />
+    </LinearLayout>
+
+
+    <LinearLayout 
+       android:layout_marginTop="10dp"
+       android:layout_width="match_parent"
+       android:layout_height="0dp"
+       android:layout_weight="5"
+       android:orientation="vertical">
+    <TextView
+       android:id="@+id/textView1"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginLeft="10dp"
+       android:text="已選擇的審核人(默認為上級主管)："
+       android:textColor="@color/red"
+       android:textSize="@dimen/sp_14_18"
+        />
+    <LinearLayout 
+       android:layout_marginTop="5dp"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:gravity="center_vertical"
+       android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="順序"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+             />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:text="審核人名"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+             />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:text="所屬單位"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+             />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:text="操作"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+             />
+       
+       </LinearLayout>
+    <ListView
+        android:id="@+id/listView_alchoose_person"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:divider="@drawable/card_xuxian"
+        android:dividerHeight="2dp"
+        android:layout_marginBottom="15dp"
+        android:paddingLeft="5dp" />
+    </LinearLayout>
+</LinearLayout>

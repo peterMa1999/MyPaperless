@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#3BB715"
+        android:gravity="center_vertical" >
+
+        <include
+            android:layout_weight="1"
+            layout="@layout/top_bar_item_pd" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_margin="5dp" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/floor"
+            android:textSize="@dimen/sp_12" />
+
+        <Spinner
+            android:id="@+id/sp_floor"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="2"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/sp_12" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/line"
+            android:textSize="@dimen/sp_12" />
+
+        <Spinner
+            android:id="@+id/sp_line"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="2"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/sp_12" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:gravity="center"
+            android:text="@string/str_time"
+            android:textSize="@dimen/sp_12" />
+
+        <EditText
+            android:id="@+id/et_start"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/sp_12" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/str_end"
+            android:textSize="@dimen/sp_12"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/et_end"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="2"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/sp_12"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btn_query"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/chart_data_btn_bg"
+            android:text="@string/str_query"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_14" />
+    </LinearLayout>
+
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/chart"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_marginTop="10dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_temperature"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/chart_data_btn_bg"
+            android:gravity="center"
+            android:text="@string/str_temperature"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_14" />
+
+        <Button
+            android:id="@+id/btn_humiditry"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/chart_data_btn_bg"
+            android:gravity="center"
+            android:text="@string/str_humidity"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_14" />
+
+        <Button
+            android:id="@+id/btn_refresh"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/chart_data_btn_bg"
+            android:gravity="center"
+            android:text="@string/str_refresh"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_14" />
+    </LinearLayout>
+
+</LinearLayout>

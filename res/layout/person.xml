@@ -1,0 +1,322 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+	<include layout="@layout/top_bar"/>
+    <LinearLayout
+        android:id="@+id/Person_stick"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/person_shape_white"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5" >
+
+            <ImageView
+                android:id="@+id/Head_portrait"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/person_photo_pading"
+                android:src="@drawable/ic_launcher" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="0.3"
+                    android:gravity="left|center" >
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="1"
+                    android:gravity="left|center" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Person_in_Job_number"
+                        android:textSize="@dimen/login_text_size" />
+
+                    <TextView
+                        android:id="@+id/text_job_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:textSize="@dimen/login_text_size" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="1"
+                    android:gravity="left|center" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Person_in_Full_name"
+                        android:textSize="@dimen/login_text_size" />
+
+                    <TextView
+                        android:id="@+id/text_Full_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:textSize="@dimen/login_text_size" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="0.4"
+                    android:gravity="left|center" >
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"
+            android:gravity="center" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_find_next_holo_dark_right" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@drawable/person_shape_gray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"
+        android:background="@drawable/person_shape_gray" >
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@drawable/person_shape_gray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2.5"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/Personnel_information"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.4"
+            android:background="@drawable/person_shape_white"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/widget_bar_person_nor" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:gravity="center|left" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Person_Personnel_information"
+                    android:textSize="@dimen/login_text_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_find_next_holo_dark_right" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@drawable/person_shape_gray" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/person_shape_gray" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@drawable/person_shape_gray" />
+
+        <LinearLayout
+            android:id="@+id/Person_Feedback"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.4"
+            android:background="@drawable/person_shape_white" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/widget_bar_mail_nor_48" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:gravity="center|left" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Person_Feedback"
+                    android:textSize="@dimen/login_text_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_find_next_holo_dark_right" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@drawable/person_shape_gray" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/person_shape_gray" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@drawable/person_shape_gray" />
+
+        <LinearLayout
+            android:id="@+id/Person_Setting_Center"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.4"
+            android:background="@drawable/person_shape_white" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/widget_bar_set_nor_48" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:gravity="center|left" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="设置中心"
+                    android:textSize="@dimen/login_text_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_find_next_holo_dark_right" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@drawable/person_shape_gray" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@drawable/person_shape_gray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:background="@drawable/person_shape_gray" >
+    </LinearLayout>
+
+</LinearLayout>

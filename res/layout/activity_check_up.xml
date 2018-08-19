@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#006903"
+    android:orientation="vertical" >
+   
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_bar_height"
+        android:background="#3BB715"
+        android:gravity="center_vertical" >
+
+        <include layout="@layout/top_bar_item_pd" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="5"
+        android:orientation="vertical" >
+
+        <ListView
+            android:id="@+id/add_oldlistView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+        </ListView>
+    </LinearLayout>
+
+</LinearLayout>

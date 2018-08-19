@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_bar_height"
+        android:background="#3BB715"
+        android:gravity="center_vertical" >
+
+        <include layout="@layout/top_bar_item_pd" />
+    </LinearLayout>
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_bar_height"
+        android:orientation="horizontal"
+        android:gravity="center_vertical" >
+	
+        <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1.2"
+        android:layout_height="match_parent"
+        android:gravity="center" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="日期：" />
+
+        <EditText
+            android:id="@+id/et_situation_time"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:singleLine="true"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/sp_12" />
+        </LinearLayout>
+        
+		<LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:gravity="center" >
+        <Spinner
+            android:id="@+id/sp_situation_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/shift_name"
+            android:layout_weight="1" />
+		</LinearLayout>
+        <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:gravity="center" >
+        <Button
+            android:id="@+id/situation_bt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#3BB715"
+            android:layout_margin="5dp"
+            android:text="查詢"
+            />
+        </LinearLayout>
+    </LinearLayout>
+    <View
+                android:id="@+id/view_dow"
+                android:layout_width="fill_parent"
+                android:layout_height="1.5dp"
+                android:background="@color/green" />
+    <LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_weight="1"
+	    android:layout_height="0dp" >
+
+        <TextView
+            android:id="@+id/textView2"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:layout_width="0dp"
+            android:layout_weight="5"
+            android:layout_height="wrap_content"
+            android:text="樓層" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="wrap_content"
+            android:text="點檢人" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:text="點檢次數" />
+
+	</LinearLayout>
+	<LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="12"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <com.zsm.foxconn.mypaperless.refreshlistview.RefreshListView
+                android:id="@+id/refreshlv_checksituation"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@null" >
+            </com.zsm.foxconn.mypaperless.refreshlistview.RefreshListView>
+        </LinearLayout>
+
+</LinearLayout>

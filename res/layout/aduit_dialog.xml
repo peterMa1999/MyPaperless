@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+     >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="80dp" >
+
+        <LinearLayout
+            android:id="@+id/main_dialog_layout"
+            android:layout_width="@dimen/add_line_width"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/title_function_bg"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/llayout01"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:background="@drawable/title_list_selector" >
+
+              
+                <TextView
+                    android:id="@+id/textview01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:text="按日期查询"
+                    android:textColor="#fff"
+                    android:textSize="@dimen/sp_14" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/mm_title_functionframe_line" />
+
+            <LinearLayout
+                android:id="@+id/llayout02"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:gravity="center"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/title_list_selector" >
+
+                <TextView
+                     android:id="@+id/textview02"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:text="駁回列表修改"
+                    android:textColor="#fff"
+                    android:textSize="@dimen/sp_14" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/mm_title_functionframe_line" />
+
+            
+
+
+            <LinearLayout
+                android:id="@+id/llayout04"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:gravity="center"
+                android:background="@drawable/title_list_selector" >
+
+                <TextView
+                     android:id="@+id/textview03"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="13dp"
+                    android:text="刷新"
+                    android:textColor="#fff"
+                    android:textSize="@dimen/sp_14" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

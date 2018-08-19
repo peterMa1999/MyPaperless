@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/message_more2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/xulie_tv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:text="3"
+                android:textColor="@color/blue"
+                android:textSize="18sp" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="fill_parent"
+                android:background="@color/green" />
+
+            <TextView
+                android:id="@+id/checkname_tv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="設備點檢保養記錄表有無執行并記錄設備點檢保養記錄表有"
+                android:textColor="@color/back"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="fill_parent"
+                android:background="@color/green" />
+
+            <TextView
+                android:id="@+id/check_yeild_tv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="1次/2H"
+                android:textColor="@color/back"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="fill_parent"
+                android:background="@color/green" />
+
+            <TextView
+                android:id="@+id/icarno_tv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="000"
+                android:textColor="@color/back"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="fill_parent"
+                android:background="@color/green" />
+
+            <TextView
+                android:id="@+id/check_result_tv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:text="是"
+                android:textColor="@color/color1"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/green" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.35"
+                android:src="@drawable/examine_head_favorite_n" />
+
+            <TextView
+                android:id="@+id/TextView01"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="点检细项:"
+                android:textColor="@color/back"
+                android:textSize="@dimen/sp_12" />
+
+            <TextView
+                android:id="@+id/check_pro_name_tv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:text="MSD元件管控MSD Label填寫完整及確認干燥劑是否有放,指示卡有無變色MSD元件管控MSD Label填寫完整及確認干燥劑是否有放,指示卡有無變色"
+                android:textColor="@color/back"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/TextView01"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="0.5" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="4.5"
+                android:background="@color/green" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.35"
+                android:src="@drawable/examine_head_favorite_n" />
+
+            <TextView
+                android:id="@+id/TextView01"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.1"
+                android:gravity="center"
+                android:text="点检记录内容:"
+                android:textColor="@color/back"
+                android:textSize="@dimen/sp_12" />
+
+            <TextView
+                android:id="@+id/check_content_tv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:text="C3751AT1,C3751AT2,C3751AB1,C3751AT1,C3751AT2,C3751AB1"
+                android:textColor="@color/back"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="5dp"
+            android:layout_margin="2dp"
+            android:background="@color/green" />
+    </LinearLayout>
+
+</LinearLayout>

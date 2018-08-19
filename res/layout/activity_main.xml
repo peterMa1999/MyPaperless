@@ -1,0 +1,65 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp" 
+        android:layout_weight="5"
+        android:orientation="vertical">
+		<FrameLayout
+            android:id="@+id/main_fragment"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.8" >
+        </FrameLayout>
+
+        <RadioGroup
+            android:id="@+id/tab_menu"
+            android:layout_weight="0.1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:gravity="center_vertical"
+            android:background="@drawable/main_shape_black"
+            android:orientation="horizontal" >
+            <RadioButton
+                android:id="@+id/main"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center"
+                android:drawableTop="@drawable/bt_main_select_nor"
+                android:text="@string/main"
+                android:textColor="@drawable/bottom_text_color"
+                android:textSize="@dimen/bottom_textsize" />
+
+            <RadioButton
+                android:id="@+id/examine"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:gravity="center"
+                android:drawableTop="@drawable/bt_history_select_nor"
+                android:text="@string/examine"
+                android:textColor="@drawable/bottom_text_color"
+                android:textSize="@dimen/bottom_textsize" />
+
+            <RadioButton
+                android:id="@+id/Person"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:gravity="center"
+                android:drawableTop="@drawable/bt_person_select_nor"
+                android:text="@string/person"
+                android:textColor="@drawable/bottom_text_color"
+                android:textSize="@dimen/bottom_textsize" />
+        </RadioGroup>      
+    </LinearLayout>
+
+</LinearLayout>

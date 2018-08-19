@@ -1,0 +1,118 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_bar_height"
+        android:background="#3BB715"
+        android:gravity="center_vertical" >
+
+        <include layout="@layout/top_bar_person" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="5"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="10dp"
+            android:layout_weight="0.3"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <com.zsm.foxconn.mypaperless.clearedittext.ClearEditText
+                android:id="@+id/query"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="15dp"
+                android:layout_weight="5"
+                android:background="@drawable/shape_bottom_radius_no_top_line"
+                android:drawableRight="@drawable/delete_46"
+                android:ems="10"
+                android:hint="@string/Person_Enter_number_or_name_query"
+                android:inputType="textPersonName"
+                android:maxLength="10"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp" >
+            </com.zsm.foxconn.mypaperless.clearedittext.ClearEditText>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/person_search"
+                android:onClick="search" />
+
+            <!-- <ImageView -->
+            <!-- android:layout_width="wrap_content" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- android:onClick="add" -->
+            <!-- android:background="@drawable/person_add" /> -->
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.2"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/Person_job_number"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/sp_18" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/Person_Full_name"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/sp_18" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/Person_duties"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/sp_18" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/Person_Master"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/sp_18" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="3" >
+
+            <ListView
+                android:id="@+id/listView111"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+            </ListView>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

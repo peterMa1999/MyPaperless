@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/person_information_width" >
+
+    <ImageView
+        android:id="@+id/image_delete"
+        android:layout_width="@dimen/person_information_width"
+        android:layout_height="@dimen/person_information_width"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/delete_report_nor" />
+
+    <Spinner
+        android:id="@+id/field_item_spinner_content"
+        style="@style/spinner_style"
+        android:layout_width="@dimen/add_line_width_100"
+        android:layout_height="@dimen/person_information_width"
+        android:layout_alignParentTop="true"
+        android:animationCache="true"
+        android:drawSelectorOnTop="true"
+        android:layout_toLeftOf="@+id/image_delete"
+         />
+    <TextView
+        android:id="@+id/text_child"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/person_information_width"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="15dp"
+        android:gravity="center"
+        android:text="child"
+        android:textSize="@dimen/sp_16_20"
+        android:textColor="#0099ff" />
+
+</RelativeLayout>

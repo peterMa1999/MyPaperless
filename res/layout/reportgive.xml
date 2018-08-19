@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/layout_height_100"
+    android:orientation="vertical" 
+    android:id="@+id/item"
+    android:layout_marginTop="5dp"
+    >
+	<ImageView 
+	    android:id="@+id/reportimage"
+	    android:layout_width="@dimen/image_56"
+	    android:layout_height="@dimen/image_56"
+	    android:layout_gravity="center"
+	    android:scaleType="fitXY"
+	    android:src="@drawable/g1"
+	    android:background="@null"
+	    android:padding="10dp"/>
+	
+	<TextView
+	    android:id="@+id/reporttitle"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_gravity="center"
+	    android:gravity="center_horizontal"
+	    android:textSize="@dimen/sp_14_18"
+	    android:textColor="@color/back"
+	    android:text="報表名稱"
+	    />
+
+</LinearLayout>

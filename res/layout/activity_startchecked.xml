@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+     <include  layout="@layout/activity_head_top"></include>
+    <!--  
+   <RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="#3BB715" >
+
+    <TextView
+        android:id="@+id/head_title"
+        style="@style/head_text_styles"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="點檢線別" />
+
+    <ImageButton
+        android:id="@+id/head_back"
+        style="@style/head_btn_styles"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="5dp"
+        android:onClick="returnClick"
+        android:src="@drawable/back_click_seletor" />
+
+    <Button
+        android:id="@+id/check_bt"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/submit_click_seletor" />
+
+</RelativeLayout>
+-->
+<LinearLayout 
+    android:layout_marginTop="15dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+   <LinearLayout 
+       android:layout_marginTop="10dp"
+       android:layout_width="match_parent"
+       android:orientation="vertical"
+       android:layout_height="wrap_content">
+    <ListView
+        android:id="@+id/CheckedLines"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@drawable/card_xuxian"
+        android:dividerHeight="2dp"
+        android:paddingLeft="5dp" />
+    </LinearLayout>
+</LinearLayout>
+</LinearLayout>

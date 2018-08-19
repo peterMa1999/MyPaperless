@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_margin="20dp"
+        android:background="@drawable/bt_shape_log"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="5dp" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="10dp" >
+
+            <TextView
+                android:id="@+id/edit_title_kpi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="编辑"
+                android:textColor="@color/back"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:background="@color/greenb" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:padding="5dp" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill_vertical"
+                android:text="點檢記錄內容:"
+                android:textColor="@color/back" />
+
+            <EditText
+                android:id="@+id/type_kpi_config"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:background="@color/color17"
+                android:gravity="fill_horizontal"
+                android:paddingLeft="5dp"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/buttonLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="10dp" >
+
+            <Button
+                android:id="@+id/btn_dialog_ok_kpi"
+                android:layout_width="100.0dip"
+                android:layout_height="30.0dip"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/dialog_button"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:textSize="14.0dip " />
+
+            <Button
+                android:id="@+id/btn_dialog_no_kpi"
+                android:layout_width="100.0dip"
+                android:layout_height="30.0dip"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/dialog_button"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:textSize="14.0dip " />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,500 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="yuan">
+        <item></item>
+        <item>停線</item>
+        <item>保養</item>
+        <item>設備異常</item>
+        <item>開線</item>
+        <item>換線</item>
+        <item>未開線</item>
+        <item>外包</item>
+    </string-array>
+     <string-array name="CHECK_NAME">
+       	<item>PD</item>
+        <item>SMT-PD</item>
+        <item>PTH-PD</item>
+        <item>SI-PD</item>
+        <item>TEST-PD</item>
+        <item>PE/QE/ME/Process</item>
+        <item>IPQC</item>
+        <item>RE</item>
+        <item>SE</item>
+        <item>IE</item>
+        <item>TE</item>
+        <item>WHS</item>
+    </string-array>
+    <string-array name="ting">
+        <item></item>
+        <item>安全性問題</item>
+        <item>制程失控->在20個樣品中發現5個隨機缺陷或3個重复缺陷</item>
+        <item>錯件</item>
+        <item>機器程序不正确</item>
+        <item>治具不對</item>
+        <item>無操作規範或治具不適當</item>
+        <item>機器故障或異常</item>
+        <item>FAI不能接受</item>
+        <item>燒板</item>
+        <item>客戶需求﹐如緊急ECO導入</item>
+    </string-array>
+    <string-array name="Voltage">
+        <item>0.1</item>
+        <item>0.2</item>
+        <item>0.3</item>
+    </string-array>
+    <string-array name="check_table_message">
+        <item>按点检项目NO</item>
+        <item>按选择时间</item>
+        <item>按料号NO</item>
+    </string-array>
+    <string-array name="country">
+        <item>India</item>
+        <item>United States</item>
+        <item>Canada</item>
+        <item>Australia</item>
+        <item>United Kingdom</item>
+        <item>Philippines</item>
+        <item>Japan</item>
+        <item>Italy</item>
+        <item>Germany</item>
+        <item>Russia</item>
+        <item>Malaysia</item>
+        <item>France</item>
+        <item>Sweden</item>
+        <item>New Zealand</item>
+        <item>Singapore</item>
+    </string-array>
+   <!-- Person -->
+    <string-array name="Duties">
+        <item>員工</item>
+        <item>帶班</item>
+        <item>工程師</item>
+        <item>組長</item>
+        <item>領班</item>
+        <item>線長</item>
+        <item>課長</item>
+        <item>專理</item>
+        <item>經理</item>
+        <item>處長</item>
+        <item>協理</item>
+        <item>總經理</item>
+    </string-array>
+    <string-array name="Business_name">
+        <item>IPQC</item>
+        <item>PE</item>
+        <item>治工具/layout</item>
+        <item>ME</item>
+        <item>TE</item>
+        <item>RE</item>
+        <item>PQE</item>
+        <item>IE</item>
+        <item>PROCESS</item>
+        <item>TOOL</item>
+        <item>PD</item>
+    </string-array>
+    <string-array name="Industry_title">
+        <item>MFGI</item>
+        <item>MFGII</item>
+        <item>MFGIII</item>
+        <item>MFGV</item>
+        <item>MFGVI</item>
+        <item>MFGVII</item>
+        <item>MFGVIII</item>
+    </string-array>
+    <string-array name="Division_BU">
+        <item>N/A</item>
+        <item>NPI</item>
+        <item>UABU</item>
+        <item>TIPBU/BPD</item>
+        <item>BPD</item>
+        <item>ALL</item>
+        <item>TIPBU</item>
+        <item>ERBU/SCBU/PABU</item>
+        <item>SFPG</item>
+        <item>PABU</item>
+        <item>SERVER</item>
+        <item>ERBU</item>
+        <item>CDBU</item>
+        <item>MCEBU</item>
+        <item>SRGBU</item>
+        <item>WNBU</item>
+        <item>PCBU</item>
+         <item>環安</item>
+    </string-array>
+    <string-array name="Section">
+        <item>N/A</item>
+        <item>UNLL</item>
+        <item>PTH</item>
+        <item>SI維修</item>
+        <item>5DX</item>
+        <item>SMT</item>
+        <item>壓合</item>
+        <item>SI</item>
+        <item>E5NPI</item>
+        <item>PTH/SI</item>
+         <item>環安</item>
+    </string-array>
+    <string-array name="BU">
+        <item>NSDI</item>
+    </string-array>
+    <string-array name="BU_again">
+        <item>LH</item>
+    </string-array>
+<string-array name="quanxian">
+  <item>0</item> 
+  <item>1</item> 
+  <item>2</item> 
+  </string-array>
+ <string-array name="UserLevel">
+  <item>普通用户</item> 
+  <item>管理员</item> 
+  <item>高级管理员</item> 
+  </string-array>
+  <string-array name="floorname">
+      <item>D10 2F</item>
+      <item>D10 3F</item>
+      <item>D9 2F</item>
+      <item>D9 3F</item>
+      <item>E5 2F</item>
+      <item>E5 3F</item>
+      <item>E6 2F</item>
+      <item>E6 3F</item>
+      <item>E6 4F</item>
+      <item>F21 2F</item>
+      <item>F21 3F</item>
+      <item>F21 4F</item>
+  </string-array>
+  <string-array name="check_yeild">
+      <item>1次/1H</item>
+      <item>1次/1天</item>
+      <item>1次/半天</item>
+      <item>1次/1周</item>
+      <item>隨機</item>
+  </string-array>
+  <string-array name="section">
+      <item>SMT</item>
+      <item>ASSY</item>
+      <item>PTH</item>
+      <item>PACK</item>
+  </string-array>
+  <string-array name="department">
+	  <item>PD</item>
+      <item>IPQC</item>
+      <item>TE</item>
+      <item>IE</item>
+      <item>PE</item>
+      <item>RE</item>
+      <item>PQE</item>
+  </string-array>
+  <string-array name="priority">
+        <item>Normal</item>
+        <item>Warm</item>
+        <item>Hot</item>
+    </string-array>
+    <string-array name="type">
+        <item>Factory</item>
+        <item>DF</item>
+        <item>Field</item>
+    </string-array>
+    <string-array name="icar_create_spinner1">
+        <item>FOC LH</item>
+    </string-array>
+    <string-array name="icar_create_spinner2">
+        <item>NSDI</item>
+    </string-array>
+    <string-array name="icar_create_spinner3">
+        <item></item>
+        <item>ETTC</item>
+        <item>MFGI</item>
+        <item>MFGII</item>
+        <item>MFGIII</item>
+        <item>MFGV</item>
+        <item>MFGVI</item>
+        <item>MFGVII</item>
+        <item>MFGVIII</item>
+        <item>MKD</item>
+    </string-array>
+    <string-array name="icar_create_spinner4">
+        <item></item>
+        <item>SERVER</item>
+    </string-array>
+    <string-array name="icar_create_spinner5">
+        <item></item>
+        <item>(FQC)Label 不良">(FQC)Label 不良</item>
+        <item>(FQC)不上錫</item>
+        <item>(FQC)反向/反白</item>
+        <item>(FQC)少件/多件</item>
+        <item>(FQC)少錫</item>
+        <item>(FQC)折腳</item>
+        <item>(FQC)其它</item>
+        <item>(FQC)空焊</item>
+        <item>(FQC)浮高</item>
+        <item>(FQC)側立/立碑</item>
+        <item>(FQC)偏位</item>
+        <item>(FQC)殘留異物</item>
+        <item>(FQC)損件</item>
+        <item>(FQC)錫珠/錫渣</item>
+        <item>(FQC)錫橋</item>
+        <item>(FQC)翹腳</item>
+        <item>(IPQC) 8S 問題</item>
+        <item>(IPQC)All Part issue</item>
+        <item>(IPQC)APS issue</item>
+        <item>(IPQC)ESD issue</item>
+        <item>(IPQC)Machine issue</item>
+        <item>(IPQC)Material issue</item>
+        <item>(IPQC)Operator issue</item>
+        <item>(IPQC)SOP error</item>
+        <item>(IPQC)Wrong component</item>
+        <item>(IPQC)上料未掃描</item>
+        <item>(IPQC)反向</item>
+        <item>(IPQC)未按SOP作業</item>
+        <item>(IPQC)作業不良</item>
+        <item>(IPQC)其它</item>
+        <item>(IPQC)敏感元件問題</item>
+        <item>(IPQC)錫膏印刷異常/Solder print issue</item>
+        <item>(IPQC)點檢表問題/點檢表漏點檢</item>
+        <item>(NPI)All part issue </item>
+        <item>(NPI)BOM error</item>
+        <item>(NPI)Machine issue</item>
+        <item>(NPI)Material issue</item>
+        <item>(NPI)Operator issue</item>
+        <item>(NPI)Other</item>
+        <item>(NPI)SOP error</item>
+        <item>(NPI)設計問題</item>
+        <item>(NPI)罩板不良</item>
+        <item>(OBA)eOBA 不良</item>
+        <item>(OBA)LED發光異常/功能不良</item>
+        <item>(OBA)PCBA 外觀不良</item>
+        <item>(OBA)反向</item>
+        <item>(OBA)少錫/錫珠/錫渣</item>
+        <item>(OBA)包材問題</item>
+        <item>(OBA)立碑</item>
+        <item>(OBA)其它</item>
+        <item>(OBA)附件問題</item>
+        <item>(OBA)面板外觀不良/機構外觀不良</item>
+        <item>(OBA)面板絲印不良</item>
+        <item>(OBA)風扇外觀不良</item>
+        <item>(OBA)記憶卡外觀不良</item>
+        <item>(OBA)偏位/零件翹腳</item>
+        <item>(OBA)連接器Pin針不良/連接器不良</item>
+        <item>(OBA)散熱片不良</item>
+        <item>(OBA)殘留異物</item>
+        <item>(OBA)硬盤外觀不良</item>
+        <item>(OBA)貼紙&amp;Label不良</item>
+        <item>(OBA)電源外觀不良</item>
+        <item>(OBA)零件損傷/錯件/少件/多件</item>
+        <item>(OBA)彈片不良</item>
+        <item>(OBA)標示與實物不符</item>
+        <item>(OBA)模組的外觀不良</item>
+        <item>(OBA)錯料/SN不符</item>
+        <item>(OBA)螺絲,把手,EMI外觀不良</item>
+        <item>(others)3PCS sampe failed out of 20 PCS</item>
+        <item>(others)5PCS Failed Out Of 20 PCS</item>
+        <item>(others)FQC Reject</item>
+        <item>(others)Machine Fail</item>
+        <item>(others)OBA reject</item>
+        <item>(others)other</item>
+        <item>(others)Over DPPM Go</item>
+        <item>(others)Over FPY Goa</item>
+        <item>(others)Reject by QA Mgr</item>
+        <item>(PTH SI-Exception)工程師不能及時處理</item>
+        <item>(PTH SI-Exception)來料不良低效生產</item>
+        <item>(PTH SI-Exception)其它</item>
+        <item>(PTH SI-Exception)制程不良低效生產</item>
+        <item>(PTH SI-Exception)治具設計不合理不易操作</item>
+        <item>(PTH SI-Exception)治具損壞免強作業</item>
+        <item>(PTH SI-Exception)流程及作業規范不合理</item>
+        <item>(PTH SI-Exception)缺料前預警</item>
+        <item>(PTH SI-Exception)測試Cell數因故障減少</item>
+        <item>(PTH SI-Exception)新人低效作業</item>
+        <item>(PTH SI-Exception)溫濕度超標</item>
+        <item>(PTH SI-Exception)增加產線附加工作</item>
+        <item>(PTH SI-LineStop)SFC系統故障</item>
+        <item>(PTH SI-LineStop)來料不良超標</item>
+        <item>(PTH SI-LineStop)其它</item>
+        <item>(PTH SI-LineStop)制程不良超標</item>
+        <item>(PTH SI-LineStop)治具不良</item>
+        <item>(PTH SI-LineStop)物料供應不及時</item>
+        <item>(PTH SI-LineStop)物料無庫存</item>
+        <item>(PTH SI-LineStop)缺少工治具</item>
+        <item>(PTH SI-LineStop)缺乏人力</item>
+        <item>(PTH SI-LineStop)設備當機</item>
+        <item>(PTH SI-LineStop)測試不良率超標</item>
+        <item>(PTH SI-LineStop)測試系統異常</item>
+        <item>(PTH SI-LineStop)無治具作業</item>
+        <item>(PTH SI-LineStop)無流程及作業規范作業</item>
+        <item>(PTH SI-LineStop)違反流程作業</item>
+        <item>(PTH SI-LineStop)斷電</item>
+        <item>(RE-Exception)元件不良</item>
+        <item>(RE-Exception)反白</item>
+        <item>(RE-Exception)反向</item>
+        <item>(RE-Exception)少件</item>
+        <item>(RE-Exception)少錫</item>
+        <item>(RE-Exception)多件</item>
+        <item>(RE-Exception)折腳</item>
+        <item>(RE-Exception)其它</item>
+        <item>(RE-Exception)空焊</item>
+        <item>(RE-Exception)浮高</item>
+        <item>(RE-Exception)偏位</item>
+        <item>(RE-Exception)殘留異物</item>
+        <item>(RE-Exception)損件</item>
+        <item>(RE-Exception)錯件</item>
+        <item>(RE-Exception)錫橋</item>
+        <item>(RE-Exception)翹腳</item>
+        <item>(SMT-Exception)ALL系統異常</item>
+        <item>(SMT-Exception)AOI程式誤判超標</item>
+        <item>(SMT-Exception)Feeder異常</item>
+        <item>(SMT-Exception)SFC系統異常</item>
+        <item>(SMT-Exception)SMT傳板軌道無法正常運轉</item>
+        <item>(SMT-Exception)SMT機種SOP異常</item>
+        <item>(SMT-Exception)回焊爐設備故障﹐無法正常過板</item>
+        <item>(SMT-Exception)良率異常</item>
+        <item>(SMT-Exception)其它</item>
+        <item>(SMT-Exception)物料異常&lt;有臨時處理對策&gt;</item>
+        <item>(SMT-Exception)設備卡板,導致PCBA報廢</item>
+        <item>(SMT-Exception)設備拋料異常</item>
+        <item>(SMT-Exception)新人低效作業</item>
+        <item>(SMT-LineStop)ALL系統異常</item>
+        <item>(SMT-LineStop)SFC系統異常</item>
+        <item>(SMT-LineStop)SMT 治具異常</item>
+        <item>(SMT-LineStop)工務水、電、氣異常</item>
+        <item>(SMT-LineStop)良率異常</item>
+        <item>(SMT-LineStop)其它</item>
+        <item>(SMT-LineStop)物料異常</item>
+        <item>(SMT-LineStop)缺料、欠料停線</item>
+        <item>(SMT-LineStop)產品試作延長</item>
+        <item>(SMT-LineStop)設備拋料異常</item>
+        <item>(SMT-LineStop)設備保養工時延長</item>
+        <item>(SMT-LineStop)設備當機</item>
+        <item>(SMT-LineStop)換線工時延長</item>
+        <item>(SMT-LineStop)換線調機</item>
+        <item>(SMT-LineStop)無排程</item>
+        <item>(SMT-LineStop)程式調整/工程變更</item>
+        <item>2nd Over DPPM Goal</item>
+        <item>Audit Finds</item>
+        <item>component burnt</item>
+        <item>component crack</item>
+        <item>Customer Complaint</item>
+        <item>ETE</item>
+        <item>ICT</item>
+        <item>Machine Issue</item>
+        <item>ORT</item>
+        <item>Over DPPM Goal</item>
+        <item>PCBA burnt</item>
+        <item>RMA</item>
+    </string-array>
+    <string-array name="icar_create_spinner6">
+        <item></item>
+        <item>ASSY</item>
+        <item>FT</item>
+        <item>HIPOT</item>
+        <item>ICT</item>
+        <item>OSD</item>
+        <item>PBST</item>
+        <item>PCB2C</item>
+        <item>PCBDG</item>
+        <item>PCBDL</item>
+        <item>PCBFA</item>
+        <item>PCBP2</item>
+        <item>PCBPB</item>
+        <item>PCBPM</item>
+        <item>PCBPM2</item>
+        <item>PCBPM3</item>
+        <item>PCBST</item>
+        <item>PT</item>
+        <item>RC</item>
+        <item>RI</item>
+        <item>RX</item>
+        <item>RXA</item>
+        <item>RXG</item>
+        <item>SPUR</item>
+        <item>SYSFA</item>
+        <item>SYSFT</item>
+        <item>SYSPB</item>
+        <item>SYSPM</item>
+        <item>TX</item>
+        <item>TXA</item>
+        <item>TXG</item>
+        <item>WC</item>
+        <item>XRAY</item>
+    </string-array>
+    <string-array name="icar_create_spinner7">
+        <item>NSDI</item>
+    </string-array>
+    <string-array name="icar_create_spinner8">
+        <item></item>
+        <item>5DX</item>
+        <item>allparts</item>
+        <item>ICT</item>
+        <item>IE</item>
+        <item>IPQC</item>
+        <item>IQC</item>
+        <item>IT</item>
+        <item>Kitting</item>
+        <item>ME</item>
+        <item>MPM</item>
+        <item>MRB</item>
+        <item>PC</item>
+        <item>PD</item>
+        <item>PE</item>
+        <item>PM</item>
+        <item>PQE</item>
+        <item>PTH</item>
+        <item>Purchasing</item>
+        <item>RCFA</item>
+        <item>RE</item>
+        <item>SE</item>
+        <item>SFC</item>
+        <item>SI</item>
+        <item>SMT</item>
+        <item>SQE</item>
+        <item>WH</item>
+        <item>工具室</item>
+        <item>生產支援</item>
+        <item>燒錄中心</item>
+    </string-array>
+    <string-array name="canshu_mianbie">
+        <item>BOT</item>
+        <item>TOP</item>
+        <item>DOUBLE</item>
+    </string-array>
+     <string-array name="month">
+	  <item>01月</item>
+      <item>02月</item>
+      <item>03月</item>
+      <item>04月</item>
+      <item>05月</item>
+      <item>06月</item>
+      <item>07月</item>
+      <item>08月</item>
+      <item>09月</item>
+      <item>10月</item>
+      <item>11月</item>
+      <item>12月</item>
+  </string-array>
+  <string-array name="lv_type">
+	  <item>日使用率</item>
+      <item>周使用率</item>
+      <item>月使用率</item>
+      <item>季使用率</item>
+  </string-array>
+  <string-array name="shift_name">
+      <item></item>
+	  <item>白班</item>
+      <item>夜班</item>
+  </string-array>
+  
+  <string-array name="tijiao_way">
+      <item></item>
+	  <item>不點檢</item>
+  </string-array>
+  
+  <string-array name="checksit_yeild">
+      <item>班別</item>
+      <item>日點</item>
+      <item>周</item>
+      <item>月</item>
+      <item>季</item>
+  </string-array>
+</resources>

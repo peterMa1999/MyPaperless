@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/person_information_width"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/do_not_wit_edt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.7"
+                android:ems="10"
+                android:enabled="true"
+                android:hint="@string/Yuan_Ying"
+                android:maxLines="5"
+                android:textSize="@dimen/sp_14"
+                android:textColor="@color/color12"
+                android:inputType="textPersonName" />
+
+            <Button
+                android:id="@+id/toup_btn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:background="@drawable/person_submit"
+                android:textSize="@dimen/sp_14"
+                android:text="提交" />
+        </LinearLayout>
+
+</LinearLayout>

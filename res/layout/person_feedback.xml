@@ -1,0 +1,145 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_bar_height"
+        android:background="#3BB715"
+        android:gravity="center_vertical" >
+
+        <include layout="@layout/top_bar_item_person" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_weight="0.004"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Person_in_Job_number"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/sp_16" />
+
+                    <TextView
+                        android:id="@+id/we1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/sp_16" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Person_in_Full_name"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/sp_16" />
+
+                    <TextView
+                        android:id="@+id/we2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/sp_16" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/person_information_width"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="0.005"
+                android:background="@drawable/person_info_white">
+
+                <com.zsm.foxconn.mypaperless.clearedittext.ClearEditText
+                    android:id="@+id/EditText01"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:drawableRight="@drawable/delete_46"
+                    android:gravity="top"
+                    android:hint="请写下要反馈的内容"
+                    android:maxLength="100"
+                    android:maxLines="20"
+                    android:padding="5dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/sp_16" >
+
+                    <requestFocus />
+                </com.zsm.foxconn.mypaperless.clearedittext.ClearEditText>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/Button01"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/person_feedback_button"
+                android:background="@drawable/person_submit"
+                android:text="@string/Person_Submit"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/sp_16" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="9"
+            android:orientation="vertical" >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="历史反馈"
+                android:layout_gravity="center"
+                android:textSize="@dimen/sp_18" />
+            <ListView
+                android:id="@+id/listView22"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+            </ListView>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

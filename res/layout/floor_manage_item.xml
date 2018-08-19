@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="#F5F3F5"
+     >
+
+	<LinearLayout
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:background="@drawable/onclick_bg" 
+           android:orientation="horizontal">
+
+
+		<TextView
+		    android:id="@+id/tv_floor"
+		    android:layout_width="0dp"
+		    android:layout_weight="0.33"
+		    android:gravity="center"
+		    android:layout_height="@dimen/top_bar_height_35_45"
+		    android:textSize="@dimen/sp_14_18"
+		    android:text="樓層" />
+
+		<TextView
+		    android:id="@+id/tv_line"
+		    android:layout_width="0dp"
+		    android:layout_weight="0.33"
+		    android:gravity="center"
+		    android:layout_height="@dimen/top_bar_height_35_45"
+		    android:textSize="@dimen/sp_14_18"
+		    android:text="線別(點檢物)" />
+		
+		<TextView
+		    android:id="@+id/tv_sbu"
+		    android:layout_width="0dp"
+		    android:layout_weight="0.33"
+		    android:gravity="center"
+		    android:layout_height="@dimen/top_bar_height_35_45"
+		    android:textSize="@dimen/sp_14_18"
+		    android:text="SBU" />
+        
+    </LinearLayout>
+   
+    </LinearLayout>

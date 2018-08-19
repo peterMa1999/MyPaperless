@@ -1,0 +1,79 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/popwindow_shape_white"
+    android:orientation="vertical">
+
+		<LinearLayout
+		    android:layout_width="match_parent"
+       		android:layout_height="wrap_content"
+		    android:gravity="right|center_vertical" >
+		 <ImageButton
+		   android:id="@+id/closePopwindow"
+           android:layout_width="@dimen/image_48"
+           android:layout_height="@dimen/image_48"
+           android:background="@null"
+           android:src="@drawable/close_popwindow" />
+		 <ImageButton
+		   android:id="@+id/OK"
+		   android:layout_marginRight="5dp"
+           android:layout_width="@dimen/image_48"
+           android:layout_height="@dimen/image_48"
+           android:background="@null"
+           android:src="@drawable/submit_click_seletor4" />
+		</LinearLayout>
+
+    <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="@dimen/top_bar_height_35" 
+       android:gravity="center_vertical"
+       android:layout_marginTop="5dp"
+       android:orientation="horizontal">
+
+       <Spinner
+           android:id="@+id/spinner_check_name"
+           android:layout_width="0dp"
+           android:layout_marginLeft="10dp"
+		   android:layout_height="match_parent"
+           android:layout_weight="0.35"
+           android:entries="@array/CHECK_NAME"
+           android:spinnerMode="dialog"
+           android:background="@drawable/nt_wangdianditu_cbx_bg" />
+
+       <View
+           android:id="@+id/view1"
+           android:layout_width="0dp"
+           android:layout_height="match_parent"
+           android:layout_weight="0.55" />
+
+       <ImageButton
+           android:id="@+id/imageButton_add"
+           android:layout_width="0dp"
+           android:layout_height="match_parent"
+           android:layout_weight="0.15"
+           android:background="@null" />
+       <ImageButton
+           android:id="@+id/imageButton1_detele"
+           android:layout_width="0dp"
+           android:layout_height="match_parent"
+           android:layout_weight="0.15"
+           android:background="@null"
+           />
+   </LinearLayout>
+
+   <LinearLayout 
+       android:layout_marginTop="20dp"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+    <ListView
+        android:id="@+id/listViewperson"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:divider="@drawable/card_xuxian"
+        android:dividerHeight="2dp"
+        android:layout_marginBottom="15dp"
+        android:paddingLeft="5dp" />
+    </LinearLayout>
+</LinearLayout>

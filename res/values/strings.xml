@@ -1,0 +1,334 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">main</string>
+    <string name="title_activity_login">MyPaperless</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="main">首页</string>
+    <string name="examine">审核管理</string>
+    <string name="person">个人中心</string>
+    <!-- examine_no_check_inquiry.xml -->
+    <string name="day">白班</string>
+    <string name="night">晚班</string>
+    <string name="time">請選擇時間:</string>
+    <string name="Session">請選擇節次:</string>
+    <string name="DayOrNight">請選擇班别:</string>
+    <string name="sequence">序列</string>
+    <string name="Business_Division">事業處</string>
+    <string name="station">工站</string>
+    <string name="floor">樓層</string>
+    <string name="Line">線別</string>
+    <string name="day_or_nig">班別</string>
+    <string name="Date_Session">日期/節次</string>
+    <string name="Yuan_Ying">請輸入原因......</string>
+    <!-- activity_check_electric_screwdriver.xml -->
+    <string name="RNO">RNO:</string>
+    <string name="class_type">班別:</string>
+    <string name="line">线別:</string>
+    <string name="ok">确定</string>
+    <string name="completionHint">请输入起子编号</string>
+    <string name="number">起子编号:</string>
+    <string name="torque_value">扭力值:</string>
+    <string name="calculation">计算</string>
+    <string name="voltage">电压值小于0.3:</string>
+    <string name="resistance">接地电阻值小于10:</string>
+    <string name="check_result">点检结果:</string>
+    <string name="yes">是</string>
+    <string name="no">否</string>
+    <string name="check_person">点检人:</string>
+    <string name="commit">提交</string>
+    <string name="cancel">取消</string>
+    <string name="save_picture">保存圖片</string>
+
+    <!-- activity_check_aoi.xml -->
+    <string name="check_aoi_tips">温馨提示：选择需点检编号后,按下确定按钮方可进行以下点检！如需修改编号,按下取消按钮即可！</string>
+
+    <!-- activity_check_iron.xml -->
+    <string name="check_project">点检项目</string>
+    <string name="iron">烙铁</string>
+    <string name="air_gun">风枪</string>
+
+    <!-- title -->
+    <string name="electric">电动起子点检表</string>
+
+    <!-- examine_table_message.xml -->
+    <string name="produce_table_timetv">创建时间:</string>
+    <string name="examine_persontv">创建人:</string>
+    <string name="check_tables">報表名:</string>
+    <string name="numberOrder">序列</string>
+    <string name="examine_report_NO">点检编号</string>
+    <string name="table_Status">审核状态</string>
+    <string name="table_Status_endok">审核完毕</string>
+    <string name="table_Status_endno">部分审核</string>
+    <string name="table_all_message">全部信息</string>
+    <string name="table_message_will">待审核列表</string>
+    <string name="table_message_ok">已审核列表</string>
+    <string name="table_message_no">拒签列表</string>
+    <string name="check_examine_reportNO">按點檢生成RNO</string>
+    <string name="check_examine_time">按选择时间</string>
+    <string name="check_examine_liaohaoNO">按工單</string>
+    <string name="check_examine_floor">按樓層線體</string>
+    <!-- Examine_mes_moreActivity -->
+    <string name="message_aboutmore">详细信息列表</string>
+    <string name="message_will_ok">未签核</string>
+    <string name="message_no_pass">拒签</string>
+    <string name="message_node_numbertv">节数</string>
+    <string name="message_Check_numbertv">点检编号</string>
+    <string name="message_produce_persontv">审核人</string>
+    <string name="message_more_status">状态</string>
+    <string name="message_business">事业处:</string>
+    <string name="message_floor">楼层:</string>
+    <string name="message_list_nb">工单:</string>
+    <string name="message_line_nb">线别:</string>
+    <string name="message_matter_nb">工单对应料号:</string>
+    <string name="message_report_sum">工单数量:</string>
+    <string name="message_diff_error">误差:</string>
+    <string name="message_face_nb">面别:</string>
+    <string name="message_label_reasons">标注理由:</string>
+    <string name="message_Check_labeltv">点检标注:</string>
+    <string name="message_produce_time">创建时间:</string>
+    <string name="message_moreandmore">详细点检信息>>></string>
+    <!-- Examine_mes_detailActivity.xml -->
+    <string name="message_detail_more">详细点检信息</string>
+    <string name="message_detail_statusok">通过</string>
+    <string name="message_detail_to_audit">待审核</string>
+    <string name="message_check_by">审核人:</string>
+    <string name="message_detail_statusno">驳回</string>
+    <string name="message_detail_orpass">是否通过</string>
+    <string name="message_detail_passT">确认</string>
+    <string name="message_detail_passF">取消</string>
+    <string name="detail_passyes">OK</string>
+    <string name="detail_passno">NG</string>
+    <string name="because_detail">原因:</string>
+    <string name="now_nodate">暂时没有数据</string>
+    <string name="detail_status_the_end">审核结果</string>
+    <string name="detail_checkname">点检项目</string>
+    <string name="detail_check_yeild">点检频率</string>
+    <string name="message_check_result">點檢結果</string>
+    <string name="message_check_pro_name">点检细项:</string>
+    <string name="message_check_content">点检记录内容:</string>
+    <string name="message_nopass_cause">驳回原因:</string>
+    <string name="message_charNB">最多输入30个字符！！</string>
+    <!-- examine.xml -->
+    <string name="examine_check_revise">点检修改</string>
+    <string name="examine_nocheck_search">未点检查询</string>
+    <string name="examine_check_before">提前维护线体</string>
+    <string name="add_floor">添加樓層</string>
+    <string name="creat_qr">創建二維碼</string>
+    <string name="update_floor">修改樓層</string>
+
+    <!-- person.xml -->
+    <string name="Person_Personnel_information">人员信息</string>
+    <string name="Person_Feedback">意见反馈</string>
+    <string name="Person_Setting_Center">设置中心</string>
+    <string name="Person_detailed_information">详细信息</string>
+    <string name="Person_Add_personnel">添加人员</string>
+    <string name="Person_Modify_password">修改密碼</string>
+    <string name="Person_Old_password">旧密码：</string>
+    <string name="Person_New_password">新密码：</string>
+    <string name="Person_Submit">提\t交</string>
+    <string name="Person_New_password_confirmation">新密码确认：</string>
+    <string name="Person_Staff_information_list">员工信息列表</string>
+    <string name="section_manage_name">工站楼层管理</string>
+    <string name="Person_job_number">工号</string>
+    <string name="Person_Full_name">姓名</string>
+    <string name="Person_duties">职务</string>
+    <string name="Person_Master">主管</string>
+    <string name="Person_Enter_number_or_name_query">输入工号或姓名查询</string>
+    <string name="Person_in_Full_name">姓名：</string>
+    <string name="Person_Click_Modify">点\t击\t修\t改</string>
+    <string name="Person_Submit_modification">提\t交\t修\t改</string>
+    <string name="Person_Determine_add">确\t定\t添\t加</string>
+    <string name="Person_Determine_exit">确定退出？</string>
+    <string name="Person_Determine">确\t定</string>
+    <string name="Person_Cancel">取\t消</string>
+    <string name="Person_DELETE">确定删除？</string>
+    <string name="Person_SUBMIT">确定修改？</string>
+    <string name="Person_ADD">确定添加？</string>
+    <!-- 显示数据 -->
+    <string name="Person_in_Job_number">工号：</string>
+    <string name="Person_in_Password">密码：</string>
+    <string name="Person_in_Chinese_name">中文名：</string>
+    <string name="Person_in_English_name">英文名：</string>
+    <string name="Person_in_Duties">职务：</string>
+    <string name="Person_in_Telephone">电话：</string>
+    <string name="Person_in_EMail">EMail：</string>
+    <string name="Person_in_UserLevel">等级：</string>
+    <string name="Person_in_Executive_director">主管工号：</string>
+    <string name="Person_in_Industry_title">Team：</string>
+    <string name="Person_in_Section">工站：</string>
+    <string name="Person_in_BU">BU：</string>
+    <string name="Person_in_jurisdiction">權限：</string>
+    <string name="Person_in_Business_name">製造處：</string>
+    <string name="Person_in_Division_BU">SBU：</string>
+    <string name="Person_in_BU_again">BU所在地：</string>
+    <string name="Person_in_Keeping_personnel">记录人员：</string>
+    <string name="Person_in_Recording_time">记录时间：</string>
+	
+    
+    <string name="no_person">该部门目前无人员信息,请督促添加！</string>
+    <string name="error">error</string>
+    <string name="user_pass">记住密码 </string>
+    <string name="confirm">确定 </string>
+    <string name="submit">登录 </string>
+    <string name="save">保存</string>
+    <string name="look">預覽</string>
+    <string name="photoName">输入照片名称</string>
+    <string name="delete">Delete</string>
+    <string name="search">Search</string>
+    <string name="CarNo_select">CarNo 详情</string>
+    <string name="Release">Release</string>
+    <string name="Reject">Reject</string>
+    <string name="roleManage">角色管理</string>
+    <string name="userManage">用戶管理</string>
+    <string name="modelManage">模块管理</string>
+    <string name="updatePassword">修改密碼</string>
+    <string name="tableManage">列表管理</string>
+    <string name="personReplace">用戶替換</string>
+    <string name="iCarSystem">iCar System</string>
+    <string name="fly">飛信</string>
+    <string name="UserManage">User Manage</string>
+    <string name="main_wechat">会话</string>
+    <string name="main_friend">通讯录</string>
+    <string name="main_find_friend">发现</string>
+    <string name="main_me">我</string>
+    <string name="main_userinfo">个人中心</string>
+    <string name="icar_create">Icar Create</string>
+    <string name="icar_open">Icar Open</string>
+
+    <!-- *************step1************** -->
+    <string name="text_Case">Case :</string>
+    <string name="text_Problem">Create a Case  Document the Problem:</string>
+    <string name="button_Submit">Submit</string>
+    <string name="button_Submit2_show">图库</string>
+    <string name="button_Submit2">拍照</string>
+    <string name="button_Submit4">上传</string>
+    <string name="button_Submit3">New Added</string>
+    <string name="text_xing">*</string>
+    <string name="text_01">标题:</string>
+    <string name="text_02">優先級:</string>
+    <string name="text_03">类型:</string>
+    <string name="text_04">Case Description问题描述:</string>
+    <string name="text_05">FA/RMA#</string>
+    <string name="text_06">Attach Additional Information上传附件:</string>
+    <!-- *************step2************** -->
+    <string name="text_07">厂区:</string>
+    <string name="text_08">BU:</string>
+    <string name="text_09">MFG:</string>
+    <string name="text_10">SBU:</string>
+    <string name="text_11">Problem type问题类型:</string>
+    <string name="text_12">Failed QTY/Problem:</string>
+    <string name="text_13">Line線別:</string>
+    <string name="text_14">Test Station1:</string>
+    <string name="text_15">Qty Test Failed1:</string>
+    <string name="text_16">Qty Tested1:</string>
+    <string name="text_17">Test DPPM1(系統自動計算):</string>
+
+    <!-- *************step3************** -->
+    <string name="text_18">Product1 P/N(料號):</string>
+    <string name="text_19">Product1 Family(選擇料號后自動帶出):</string>
+    <string name="text_20">Product1 usage(總共使用數):</string>
+    <string name="text_21">Product1 ID:</string>
+    <string name="text_22">Product1 Qty Failed:</string>
+    <string name="text_23">Product1 DPPM(系統自動計算):</string>
+    <string name="text_24">Optional:Component Information零件信息</string>
+    <string name="text_25">Component1 P/N(CISCO料號):</string>
+    <string name="text_26">Component1 commodity:</string>
+    <string name="text_27">Component1 Supplier(供應商):</string>
+    <string name="text_28">Supplier1 P/N(MPN):</string>
+    <string name="text_29">Comp.1 Date Code:</string>
+    <string name="text_30"> Comp.1 Lot Codes:</string>
+    <string name="text_31">Comp.1 use QTY(總共使用數):</string>
+    <string name="text_32">Comp.1 failed Qty:</string>
+    <string name="text_33">Comp.1 DPPM(系統自動計算):</string>
+    <string name="text_34">创建人:</string>
+    <string name="text_35">围堵部门:</string>
+    <string name="text_36">调查部门1:</string>
+    <string name="text_37">调查部门2:</string>
+    <string name="text_38">调查部门3:</string>
+    <string name="text_39">改善部门1:</string>
+    <string name="text_40">改善部门2:</string>
+    <string name="text_41">改善部门3:</string>
+    <string name="text_42">预防部门1:</string>
+    <string name="text_43">预防部门2:</string>
+    <string name="text_44">预防部门3:</string>
+    <string name="text_45">审核部门1:</string>
+    <string name="text_46">审核部门2:</string>
+    <string name="text_47">审核部门3:</string>
+    <string name="text_48">Close approval(Manager):</string>
+    <string name="text_49">Leader Approval:</string>
+    <string name="text_50">Leader Name:</string>
+    <string name="text_51">Remake 备注:</string>
+    <string name="text_52">Remake To驳回到:</string>
+    <string name="text_53">Seqno:</string>
+    <string name="text_54">Current Step:</string>
+    <string name="text_55">CarNo:</string>
+    <string name="text_56">Case Type:</string>
+    <string name="text_57">Problem type:</string>
+    <string name="text_58">Priority:</string>
+    <string name="text_59">Product P/N:</string>
+    <string name="text_60">Site:</string>
+    <string name="text_61">Component P/N:</string>
+    <string name="text_62">BU:</string>
+    <string name="text_63">Create Date From:</string>
+    <string name="text_64">MFG:</string>
+    <string name="text_65">Create Date To:</string>
+    <string name="text_66">SBU:</string>
+    <string name="text_67">Create Team:</string>
+    <string name="text_68">Root Cause:</string>
+    <string name="text_69">Create UserID:</string>
+
+    
+    <string name="text_examine1">歷史記錄查詢</string>
+    <string name="text_examine2">待审核列表</string>
+    <string name="text_examine3">已审核列表</string>
+    <string name="text_examine4">拒签列表</string>
+    <string name="text_examine5">点检修改</string>
+    <string name="text_examine6">點檢狀況查询</string>
+    <string name="text_examine7">提前维护线体</string>
+    <string name="text_examine8">報表配置</string>
+    <string name="text_examine9">新增報表</string>
+    <string name="text_examine10">楼层管理</string>
+    <string name="text_examine11">參數管理</string>
+    <string name="text_examine12">統計圖表</string>
+    <string name="text_examine13">異常管理</string>
+    <string name="text_examine14">補點檢</string>
+    <string name="text_examine15">IPQC CrossBU Issue</string>
+    
+    <!-- *************************** -->
+    <string name="text_step1">Step 1: Problem Description問題描述</string>
+    <string name="text_step2">Step 2: Where was the problem found?(问题是在哪发现的？)</string>
+    <string name="text_step3">Step 3: Product/Component information產品/零件訊息:</string>
+    <string name="text_step4">Step 4: Action owner (Other than Action Owner, identified Later):</string>
+    <!-- *************************** -->
+    <string name="text_part1">Part1第一部分(必填，可点击NewAdd添加该部分) *</string>
+    <string name="text_part2">Part2第二部分(测试信息，非必填选项，可点击NewAdd添加该部分)</string>
+    <string name="text_part3">Part3第三部分(产品信息，非必填选项，可点击NewAdd添加该部分)</string>
+    <string name="text_part4">Part4第四部分(零件信息，非必填选项，可点击NewAdd添加该部分)</string>
+    <string name="text_explain2">Fill in the product/Assembly/Component Detail where applicable</string>
+    <string name="text_explain1">Note: If test step is added, it s required that you also enter Qty Tested and Qty Failed values如果要填写该部分，则测试数和fail数均为必填</string>
+    <string-array name="input_type">
+        <item >手動輸入</item>
+        <item >單選輸入</item>
+        <item >系統自帶</item>
+        <item >輸入關鍵字帶出數據</item>
+    </string-array>
+     <!-- ChartListActivity -->
+    <style name="AppTheme.night">AppTheme_night</style>
+    <style name="AppTheme.day">AppTheme_day</style>
+    <string name="moistureproof_chart">防潮箱溫﹑濕度檢查表</string>
+    <string name="environment_chart">倉庫環境溫濕度檢查表</string>
+    <string name="month">月份:</string>
+    <string name="year">年份:</string>
+    <string name="str_temperature">溫度</string>
+    <string name="str_humidity">濕度</string>
+    <string name="str_refresh">刷新</string>
+    <string name="str_start">開始：</string>
+    <string name="str_end">結束：</string>
+    <string name="str_time">時間：</string>
+    <string name="str_query">查詢</string>
+    
+    
+    
+</resources>

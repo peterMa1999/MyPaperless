@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <include layout="@layout/activity_head_top"/>
+    <ScrollView 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+	<LinearLayout 
+	    android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+	    
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageButton
+            android:id="@+id/assy_imagebt"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="@dimen/gridview_width"
+            android:background="@null"
+            android:src="@drawable/assy_seletor" />
+
+        <ImageButton
+            android:id="@+id/other_imagebt"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:background="@null"
+            android:layout_height="@dimen/gridview_width"
+            android:src="@drawable/other_seletor" />
+
+    </LinearLayout>
+
+    <LinearLayout
+       android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageButton
+            android:id="@+id/pack_imagebt"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="@dimen/gridview_width"
+            android:background="@null"
+            android:src="@drawable/pack_seletor" />
+
+        <ImageButton
+            android:id="@+id/pth_imagebt"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:background="@null"
+            android:layout_height="@dimen/gridview_width"
+            android:src="@drawable/pth_seletor" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageButton
+            android:id="@+id/smt_imagebt"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="@dimen/gridview_width"
+            android:background="@null"
+            android:src="@drawable/smt_seletor" />
+        <ImageButton
+            android:id="@+id/whs_imagebt"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="@dimen/gridview_width"
+            android:background="@null"
+            android:src="@drawable/whs_seletor" />
+    </LinearLayout>
+	<LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageButton
+            android:id="@+id/kitting_imagebt"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="@dimen/gridview_width"
+            android:background="@null"
+            android:src="@drawable/kitting_seletor" />
+        <ImageButton
+            android:id="@+id/re_imagebt"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="@dimen/gridview_width"
+            android:background="@null"
+            android:src="@drawable/re_seletor" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageButton
+            android:id="@+id/te_imagebt"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="@dimen/gridview_width"
+            android:background="@null"
+            android:src="@drawable/te_seletor" />
+        <ImageButton
+            android:id="@+id/se_imagebt"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="@dimen/gridview_width"
+            android:background="@null"
+            android:src="@drawable/se_seletor" />
+    </LinearLayout>
+    </LinearLayout>
+	 </ScrollView>   
+</LinearLayout>

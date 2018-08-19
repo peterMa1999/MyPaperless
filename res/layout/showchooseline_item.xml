@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_bar_height" >
+
+        <TextView
+            android:id="@+id/scllines"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="線別"
+            android:textSize="@dimen/sp_16_20"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/begincheck_bt"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_margin="3dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/public_btclick_seletor"
+            android:textSize="@dimen/sp_16_20"
+            android:text="开始点检" />
+
+        <TextView
+            android:id="@+id/sclfloor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:textSize="@dimen/sp_14_18"
+            android:layout_toRightOf="@+id/scllines"
+            android:text="樓層" />
+
+        <Button
+            android:id="@+id/deleteline_bt"
+            android:layout_width="@dimen/image_width"
+            android:layout_height="@dimen/image_width"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/begincheck_bt"
+            android:background="@drawable/deleteline_click_seletor" />
+
+    </RelativeLayout>
+
+</LinearLayout>

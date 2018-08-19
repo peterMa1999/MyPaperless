@@ -1,0 +1,82 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/popwindow_shape_white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/submit_bt"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:text="提交" />
+
+        <TextView
+            android:id="@+id/brokemate"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="15dp"
+            android:gravity="center"
+            android:text="异常信息"
+            android:textColor="#EA6003"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/details"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_margin="3dp"
+            android:background="@drawable/shape_login_blue"
+            android:gravity="left"
+            android:padding="5dp"
+            android:text="產線點檢出現異常"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageButton
+                android:id="@+id/addphoto"
+                android:layout_width="54dp"
+                android:layout_height="54dp"
+                android:background="@null"
+                android:src="@drawable/addphoto_click" />
+			<ImageButton
+                android:id="@+id/takephoto_bt"
+                android:layout_width="54dp"
+                android:layout_height="54dp"
+                android:background="@null"
+                android:src="@drawable/takephoto_click" />
+        </LinearLayout>
+
+        <GridView
+            android:id="@+id/abnormal_wall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnWidth="10dp"
+            android:gravity="center"
+            android:horizontalSpacing="3dp"
+            android:numColumns="3"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="1dp" >
+        </GridView>
+    </LinearLayout>
+
+</LinearLayout>

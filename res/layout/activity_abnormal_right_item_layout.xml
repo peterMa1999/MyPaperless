@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_bar_height"
+        android:gravity="center_vertical" 
+        android:background="#3BB715">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/top_bar_height_35"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="異常詳細"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/sp_20" />
+
+        <ImageButton
+            android:id="@+id/activity_back"
+            android:layout_width="@dimen/top_bar_height_35"
+            android:layout_height="@dimen/top_bar_height_35"
+            android:layout_alignBottom="@+id/textView1"
+            android:layout_alignParentLeft="true"
+            android:onClick="back"
+            android:background="@null"
+            android:src="@drawable/back_click_seletor" />
+        <Button
+        android:id="@+id/btn_submit"
+        style="@style/head_btn_styles"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/examine_ok_72" />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/linear_right_root"
+        android:layout_height="match_parent"
+        android:background="#F5F3F5" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_margin="3dp"
+            android:background="@drawable/shape_login_blue"
+            android:layout_height="80dp" >
+            <TextView
+                android:id="@+id/details"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:padding="3dp"
+                android:gravity="left"
+                android:hint="异常信息描述"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/committime_tv"
+                android:textSize="12sp"
+                android:layout_marginRight="2dp"
+                android:layout_width="wrap_content"
+                android:layout_height="16dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:text="2016-11-29 10:09:29" />
+
+        </RelativeLayout>
+        <EditText
+            android:visibility="gone"
+            android:id="@+id/replay_et"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_margin="3dp"
+            android:background="@drawable/shape_login_blue"
+            android:gravity="left"
+            android:hint="回復區"
+            android:padding="5dp"
+            android:textSize="14sp" />
+        <!-- <GridView
+            android:layout_margin="3dp"
+            android:id="@+id/photo_gv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnWidth="5dp"
+            android:gravity="center"
+            android:horizontalSpacing="3dp"
+            android:numColumns="1"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="1dp" >
+        </GridView> -->
+        <ListView
+            android:layout_margin="3dp"
+            android:dividerHeight="2dp"
+            android:id="@+id/photo_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+             >
+        </ListView>
+
+    </LinearLayout>
+	
+</LinearLayout>

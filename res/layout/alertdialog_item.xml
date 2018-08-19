@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/image_width" >
+		<LinearLayout
+        android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:layout_gravity="center"
+             >
+        <TextView
+            android:id="@+id/alertdialog_top_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:textColor="@color/color1"
+            android:textSize="@dimen/sp_16_20"
+            android:text="選擇SBU：" />
+		</LinearLayout>
+		<LinearLayout
+       		 android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.7" >
+        <Spinner
+            android:id="@+id/choosesbu_spinner"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+		</LinearLayout>
+    </LinearLayout>
+	
+    <LinearLayout
+        android:id="@+id/layout_xuanze_sbu"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/image_width"
+        android:visibility="gone" >
+		<LinearLayout
+        android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:layout_gravity="center"
+             >
+        <TextView
+            android:id="@+id/alertdialog_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:textColor="@color/color1"
+            android:textSize="@dimen/sp_16_20"
+            android:text="選擇SBU：" />
+		</LinearLayout>
+		<LinearLayout
+       		 android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.7" >
+        <Spinner
+            android:id="@+id/choosesbu_sp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+		</LinearLayout>
+    </LinearLayout>
+</LinearLayout>

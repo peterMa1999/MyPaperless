@@ -1,0 +1,480 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/check_bg"
+    android:id="@+id/root_ipqc_layout"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_bar_height"
+        android:background="#3BB715"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/head_title"
+            style="@style/head_text_styles"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="點檢" />
+
+        <ImageButton
+            android:id="@+id/returnClick"
+            style="@style/head_btn_styles"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="5dp"
+            android:onClick="returnClick"
+            android:src="@drawable/back_click_seletor" />
+
+        <ImageButton
+            android:id="@+id/checkp_submit_bt"
+            style="@style/head_btn_styles"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:background="@null"
+            android:src="@drawable/submit_click_seletor3" />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/leave_info_shape"
+        android:orientation="vertical" >
+		
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/leave_info_select_shape"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/image_width"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+					<Button
+                        android:id="@+id/scanQR"
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@drawable/scan_click_qr"/>
+                    <TextView
+                        android:id="@+id/textview_wo_lot"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.2"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dp"
+                        android:text="W/O:"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/sp_14_18"
+                        android:textStyle="bold|italic" />
+
+                    <EditText
+                        android:id="@+id/check_wo_id"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/person_information_width"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_edittext"
+                        android:gravity="center"
+                        android:textColor="#000000"
+                        android:maxLength="15"
+                        android:singleLine="true"
+                        android:textSize="@dimen/sp_16"
+                        android:hint="掃一掃SN"
+                        android:textStyle="bold" >
+                    </EditText>
+
+                    <ImageButton
+                        android:id="@+id/imageButtonUP"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="top"
+                        android:layout_weight="0.16"
+                        android:background="@null"
+                        android:src="@drawable/ic_up2" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/wlayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/top_bar_height_35_45"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:id="@+id/textView2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="RNO: "
+                                android:textColor="#000000"
+                                android:textSize="@dimen/sp_14_18"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/checkp_rno_id"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="#8C2391"
+                                android:textSize="@dimen/sp_14_18"
+                                android:text="" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:id="@+id/textView2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="線別: "
+                                android:textSize="@dimen/sp_14_18"
+                                android:textColor="#000000"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/checkp_line_id"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="#8C2391"
+                                android:textSize="@dimen/sp_14_18"
+                                android:text="" />
+                        </LinearLayout>
+                        
+                    </LinearLayout>
+
+                    
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/top_bar_height_35_45"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:id="@+id/textView2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="節次: "
+                                android:textSize="@dimen/sp_14_18"
+                                android:textColor="#000000"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/checkp_checkid_id"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="#8C2391"
+                                android:text="" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:id="@+id/textView2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="MODEL: "
+                                android:textSize="@dimen/sp_14_18"
+                                android:textColor="#000000"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/checkp_model_id"
+                                android:textColor="#8C2391"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/sp_14_18"
+                                android:text="" 
+                                 />
+                        </LinearLayout>
+                        
+                    </LinearLayout>
+                    
+                    
+                    
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/top_bar_height_35_45"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.9"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="5dp"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:id="@+id/textView2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="#000000"
+                                android:text="REV: "
+                                android:textSize="@dimen/sp_14_18"
+                                android:textStyle="bold" />
+
+                            <EditText
+                                android:id="@+id/checkp_rev_id"
+                                android:textColor="#8C2391"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/person_information_width"
+                                android:paddingLeft="5dp"
+                                android:layout_marginRight="3dp"
+                                android:singleLine="true"
+                                android:gravity="center"
+                                android:textSize="@dimen/sp_14_18"
+                                android:background="@drawable/bg_edittext"
+                                android:text=""
+                                />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="15dp"
+                            android:layout_weight="0.7"
+                            android:paddingLeft="5dp"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:id="@+id/textView2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="批量: "
+                                android:textColor="#000000"
+                                android:textSize="@dimen/sp_14_18"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/checkp_piliang_id"
+                                android:textColor="#8C2391"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/sp_14_18"
+                                android:text="" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:id="@+id/textView2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Deviation:"
+                                android:textSize="@dimen/sp_14_18"
+                                android:textColor="#000000"
+                                android:textStyle="bold" />
+
+                            <EditText
+                                android:id="@+id/checkp_deviation_id"
+                                android:layout_width="match_parent"
+                                android:textColor="#8C2391"
+                                android:layout_height="@dimen/person_information_width"
+                                android:paddingLeft="5dp"
+                                android:layout_marginRight="3dp"
+                                android:singleLine="true"
+                                android:gravity="center"
+                                android:textSize="@dimen/sp_14_18"
+                                android:background="@drawable/bg_edittext" >
+                            </EditText>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/top_bar_height_35_45"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingLeft="5dp" >
+
+                        <TextView
+                            android:id="@+id/textView4"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.5"
+                            android:textColor="#000000"
+                            android:textSize="@dimen/sp_14_18"
+                            android:textStyle="bold"
+                            android:gravity="center_vertical"
+                            android:text="備註: " />
+
+                        <Spinner
+                            android:id="@+id/beizhuSpiner"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:entries="@array/yuan" />
+
+                        <Spinner
+                            android:id="@+id/questionSpiner"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:entries="@array/ting" />
+
+                        <TextView
+                            android:id="@+id/textView4"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:textColor="#000000"
+                            android:textSize="@dimen/sp_14_18"
+                            android:textStyle="bold"
+                            android:text="B/T: " />
+
+                        <EditText
+                            android:id="@+id/checkp_bt_id"
+                            android:layout_width="0dp"
+                            android:textColor="#8C2391"
+                            android:layout_height="@dimen/person_information_width"
+                            android:layout_marginRight="3dp"
+                            android:paddingLeft="5dp"
+                            android:layout_weight="1.5"
+                            android:singleLine="true"
+                            android:gravity="center"
+                            android:textSize="@dimen/sp_14_18"
+                            android:background="@drawable/bg_edittext" >
+                        </EditText>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_report_name"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/leave_info_shape"
+                android:gravity="center"
+                 >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" 
+                    android:gravity="center"
+                    android:background="@drawable/leave_info_select_shape"
+                    >
+                    <TextView 
+                    android:id="@+id/ipqccheckedtv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    android:text="報表名字"
+                    android:textSize="@dimen/sp_18_seletor"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/leave_info_select_shape"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/exlist_tv"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.5"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dp"
+                        android:text="展开所有"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/sp_16_20" />
+
+                    <ImageButton
+                        android:id="@+id/up2"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="top"
+                        android:layout_weight="0.2"
+                        android:background="@null"
+                        android:src="@drawable/ic_down2" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/exmalple_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="5"
+                    android:orientation="vertical"
+                    android:visibility="visible" >
+    <ExpandableListView
+        android:id="@+id/expListView_check_ipqc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         >
+    </ExpandableListView>
+
+                    
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

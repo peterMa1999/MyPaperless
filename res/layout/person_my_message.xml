@@ -1,0 +1,338 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_bar_height"
+        android:background="#3BB715"
+        android:gravity="center_vertical" >
+
+        <include layout="@layout/top_bar_item_person" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="5"
+        android:orientation="vertical" >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="10dp" >
+
+                <LinearLayout
+                    style="@style/person_layout_style" >
+
+                    <TextView
+                        android:text="@string/Person_in_Job_number"
+                        style="@style/person_info_text" />
+
+                    <EditText
+                        android:id="@+id/ed1"
+                        style="@style/my_message_edxt"
+                        android:background="@drawable/person_info_white"
+                        android:digits="1234567890QWERTYUIOPLKJHGFDSAZXCVBNM"
+                        android:enabled="false"
+                        android:focusable="true"
+                        android:textSize="@dimen/sp_16"
+                        android:gravity="center"
+                        android:inputType="textPersonName"
+                        android:textColor="@android:color/black" >
+                    </EditText>
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/person_layout_style" >
+
+                    <TextView
+                        android:text="@string/Person_in_Chinese_name"
+                        style="@style/person_info_text" />
+
+                    <EditText
+                        android:id="@+id/ed2"
+                        style="@style/my_message_edxt"
+                        android:background="@drawable/person_info_white"
+                        android:gravity="center"
+                        android:inputType="textPersonName"
+                        android:maxLength="10"
+                        android:textSize="@dimen/sp_16"
+                        android:textColor="@android:color/black" >
+                    </EditText>
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/person_layout_style" >
+
+                    <TextView
+                        style="@style/person_info_text"
+                        android:text="@string/Person_in_English_name"/>
+
+                    <EditText
+                        android:id="@+id/ed3"
+                        style="@style/my_message_edxt"
+                        android:background="@drawable/person_info_white"
+                        android:digits="QWERTYUIOPLKJHGFDSAZXCVBNMqwertyuioplkjhgfdsazxcvbnm "
+                        android:gravity="center"
+                        android:inputType="textPersonName"
+                        android:maxLength="20"
+                        android:textSize="@dimen/sp_16"
+                        android:textColor="@android:color/black" >
+                    </EditText>
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/person_layout_style" >
+
+                    <TextView
+                        style="@style/person_info_text"
+                        android:text="@string/Person_in_Duties"
+                         />
+
+                    <EditText
+                        android:id="@+id/ed4"
+                        style="@style/my_message_edxt"
+                        android:background="@drawable/person_info_white"
+                        android:enabled="false"
+                        android:gravity="center"
+                        android:textSize="@dimen/sp_16"
+                        android:inputType="textPersonName"
+                        android:textColor="@android:color/black" >
+                    </EditText>
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/person_layout_style" >
+
+                    <TextView
+                        style="@style/person_info_text"
+                        android:text="@string/Person_in_Telephone"
+                         />
+
+                    <EditText
+                        android:id="@+id/ed5"
+                        style="@style/my_message_edxt"
+                        android:background="@drawable/person_info_white"
+                        android:digits="1234567890+"
+                        android:gravity="center"
+                        android:inputType="textPersonName"
+                        android:textSize="@dimen/sp_16"
+                        android:textColor="@android:color/black" >
+                    </EditText>
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/person_layout_style" >
+
+                    <TextView
+                        style="@style/person_info_text"
+                        android:text="@string/Person_in_EMail"
+                         />
+
+                    <com.zsm.foxconn.mypaperless.util.EmailAutoCompleteTextView
+                        android:id="@+id/ed6"
+                        style="@style/my_message_edxt"
+                        android:background="@drawable/person_info_white"
+                        android:gravity="center"
+                        android:inputType="textPersonName"
+                        android:maxLength="40"
+                        android:textSize="@dimen/sp_16"
+                        android:textColor="@android:color/black" />
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/person_layout_style" >
+
+                    <TextView
+                        style="@style/person_info_text"
+                        android:text="@string/Person_in_Executive_director"
+                         />
+
+                    <EditText
+                        android:id="@+id/ed7"
+                        style="@style/my_message_edxt"
+                        android:background="@drawable/person_info_white"
+                        android:digits="1234567890QWERTYUIOPLKJHGFDSAZXCVBNM"
+                        android:enabled="false"
+                        android:gravity="center"
+                        android:inputType="textPersonName"
+                        android:maxLength="8"
+                        android:textSize="@dimen/sp_16"
+                        android:textColor="@android:color/black" >
+                    </EditText>
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/person_layout_style" >
+
+                    <TextView
+                        style="@style/person_info_text"
+                        android:text="@string/Person_in_BU"
+                         />
+
+                    <EditText
+                        android:id="@+id/ed8"
+                        style="@style/my_message_edxt"
+                        android:background="@drawable/person_info_white"
+                        android:enabled="false"
+                        android:gravity="center"
+                        android:inputType="textPersonName"
+                        android:textSize="@dimen/sp_16"
+                        android:textColor="@android:color/black" >
+                    </EditText>
+                </LinearLayout>
+				<LinearLayout
+                    style="@style/person_layout_style" >
+
+                    <TextView
+                        style="@style/person_info_text"
+                        android:text="@string/Person_in_Business_name"
+                         />
+
+                    <Spinner
+                        android:id="@+id/ed10"
+                        style="@style/my_message_edxt"
+                        android:textSize="@dimen/sp_16"
+                        android:background="@drawable/person_info_white"
+                        android:entries="@array/Industry_title"
+                        android:gravity="center" />
+                </LinearLayout>
+                <LinearLayout
+                    style="@style/person_layout_style" >
+
+                    <TextView
+                        style="@style/person_info_text"
+                        android:text="@string/Person_in_Division_BU"
+                         />
+
+                    <Spinner
+                        android:id="@+id/ed11"
+                        style="@style/my_message_edxt"
+                        android:background="@drawable/person_info_white"
+                        android:entries="@array/Division_BU"
+                        android:textSize="@dimen/sp_16"
+                        android:gravity="center" />
+                </LinearLayout>
+                <LinearLayout
+                    style="@style/person_layout_style" >
+
+                    <TextView
+                        style="@style/person_info_text"
+                        android:text="@string/Person_in_Industry_title"
+                         />
+
+                    <Spinner
+                        android:id="@+id/ed9"
+                        style="@style/my_message_edxt"
+                        android:textSize="@dimen/sp_16"
+                        android:background="@drawable/person_info_white"
+                        android:entries="@array/Business_name"
+                        android:gravity="center" />
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/person_layout_style" >
+
+                    <TextView
+                        style="@style/person_info_text"
+                        android:text="@string/Person_in_Section"
+                         />
+
+                    <Spinner
+                        android:id="@+id/ed12"
+                        style="@style/my_message_edxt"
+                        android:background="@drawable/person_info_white"
+                        android:entries="@array/Section"
+                        android:textSize="@dimen/sp_16"
+                        android:gravity="center" />
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/person_layout_style" >
+
+                    <TextView
+                        style="@style/person_info_text"
+                        android:text="@string/Person_in_BU_again"
+                         />
+
+                    <EditText
+                        android:id="@+id/ed13"
+                        style="@style/my_message_edxt"
+                        android:background="@drawable/person_info_white"
+                        android:enabled="false"
+                        android:gravity="center"
+                        android:textSize="@dimen/sp_16"
+                        android:inputType="textPersonName"
+                        android:textColor="@android:color/black" >
+                    </EditText>
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/person_layout_style" >
+
+                    <TextView
+                        style="@style/person_info_text"
+                        android:text="@string/Person_in_Keeping_personnel"
+                         />
+
+                    <EditText
+                        android:id="@+id/ed14"
+                        style="@style/my_message_edxt"
+                        android:background="@drawable/person_info_white"
+                        android:enabled="false"
+                        android:gravity="center"
+                        android:inputType="textPersonName"
+                        android:textSize="@dimen/sp_16"
+                        android:textColor="@android:color/black" >
+                    </EditText>
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/person_layout_style" >
+
+                    <TextView
+                        style="@style/person_info_text"
+                        android:text="@string/Person_in_Recording_time"
+                         />
+
+                    <EditText
+                        android:id="@+id/ed15"
+                        style="@style/my_message_edxt"
+                        android:background="@drawable/person_info_white"
+                        android:enabled="false"
+                        android:gravity="center"
+                        android:textSize="@dimen/sp_16"
+                        android:inputType="textPersonName"
+                        android:textColor="@android:color/black" >
+                    </EditText>
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/person_layout_style" >
+
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/person_submit"
+                        android:onClick="tijiao"
+                        android:text="@string/Person_Submit"
+                        android:textSize="@dimen/sp_18" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_bar_height"
+        android:background="#3BB715"
+        android:gravity="center_vertical" >
+
+        <include  layout="@layout/top_bar_item_person" />
+    </LinearLayout>
+
+     <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="10dp" >
+
+            <LinearLayout
+                style="@style/person_layout_style" >
+
+                <TextView
+                    style="@style/person_info_text"
+                    android:text="工號"
+                     />
+
+                <com.zsm.foxconn.mypaperless.clearedittext.ClearEditText
+                    android:id="@+id/ed_forgetpwd"
+                    style="@style/my_message_edxt"
+                    android:background="@drawable/person_info_white"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:drawableRight="@drawable/delete_46"
+                    android:maxLength="20"
+                    android:hint="已存在的系統用戶"
+                    android:textColor="@android:color/black" >
+                </com.zsm.foxconn.mypaperless.clearedittext.ClearEditText>
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/person_layout_style" >
+
+                <TextView
+                    style="@style/person_info_text"
+                    android:text="郵箱"
+                     />
+
+                <com.zsm.foxconn.mypaperless.clearedittext.ClearEditText
+                    android:id="@+id/ed_forgetpwd_email"
+                    style="@style/my_message_edxt"
+                    android:background="@drawable/person_info_white"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:hint="用戶信息中的郵箱"
+                    android:drawableRight="@drawable/delete_46"
+                    android:textColor="@android:color/black" >
+                </com.zsm.foxconn.mypaperless.clearedittext.ClearEditText>
+            </LinearLayout>
+        </LinearLayout>
+        <Button
+                android:id="@+id/send_email"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:background="@drawable/person_submit"
+                android:text="發送至郵箱"
+                android:textSize="18sp" />
+
+</LinearLayout>

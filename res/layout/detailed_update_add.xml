@@ -1,0 +1,765 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_bar_height"
+        android:background="#3BB715"
+        android:gravity="center_vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <ImageButton
+                android:id="@+id/bt_img_exit"
+                android:layout_width="@dimen/image_width"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:onClick="activity_back"
+                android:src="@drawable/back_click_seletor" />
+
+            <TextView
+                android:id="@+id/bartitle_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="@string/main"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/title_bar_textsize" />
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:layout_margin="3dp"
+                android:layout_height="@dimen/top_bar_height_35_45"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.3"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_14_18"
+                    android:text="樓層：" />
+
+                <Spinner
+                    android:id="@+id/sp_de_floor"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.7"
+                    android:layout_height="wrap_content"
+                    android:animationCache="true"
+            		android:background="@drawable/nt_wangdianditu_cbx_bg"
+            		android:drawSelectorOnTop="true"
+            		android:paddingLeft="5dip" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:layout_margin="3dp"
+                android:layout_height="@dimen/top_bar_height_35_45"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.3"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_14_18"
+                    android:text="線別：" />
+
+                <Spinner
+                    android:id="@+id/sp_de_line"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.7"
+                    android:layout_height="wrap_content"
+                    android:animationCache="true"
+            		android:background="@drawable/nt_wangdianditu_cbx_bg"
+            		android:drawSelectorOnTop="true"
+            		android:paddingLeft="5dip" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:layout_margin="3dp"
+                android:layout_height="@dimen/top_bar_height_35_45"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.3"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_14_18"
+                    android:text="幾種：" />
+
+                <EditText
+                    android:singleLine="true"
+                    android:id="@+id/ed_de_jizhong"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.7"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_14_18"
+                    android:text="" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:layout_margin="3dp"
+                android:layout_height="@dimen/top_bar_height_35_45"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.3"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_14_18"
+                    android:text="面別：" />
+
+                <Spinner
+                    android:id="@+id/sp_de_side"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7"
+                    android:animationCache="true"
+            		android:background="@drawable/nt_wangdianditu_cbx_bg"
+            		android:drawSelectorOnTop="true"
+            		android:entries="@array/canshu_mianbie"
+            		android:paddingLeft="5dip"
+                     />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/layout_yinshuji"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:layout_margin="3dp"
+                android:layout_height="@dimen/top_bar_height_35_45"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.3"
+                    android:gravity="center_vertical"
+                	android:layout_margin="3dp"
+                	android:layout_height="@dimen/top_bar_height_35_45"
+                    android:textSize="@dimen/sp_14_18"
+                    android:text="刮刀壓力：" />
+
+                <EditText
+                    android:id="@+id/ed_yali"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.7"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:textSize="@dimen/sp_14_18"
+                    android:hint="範圍用+/-或~"
+                    android:text="" />
+            </LinearLayout>
+             <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:layout_margin="3dp"
+                android:layout_height="@dimen/top_bar_height_35_45"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.3"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_14_18"
+                    android:text="印刷速度：" />
+
+                <EditText
+                    android:singleLine="true"
+                    android:id="@+id/ed_yinshua_sudu"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.7"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_14_18"
+                    android:hint="範圍用+/-或~"
+                    android:text="" />
+            </LinearLayout> 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:layout_margin="3dp"
+                android:layout_height="@dimen/top_bar_height_35_45"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.3"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_14_18"
+                    android:text="脫模速度：" />
+
+                <EditText
+                    android:singleLine="true"
+                    android:id="@+id/ed_tuomo_sudu"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.7"
+                    android:layout_height="wrap_content"
+                    android:hint="範圍用+/-或~"
+                    android:textSize="@dimen/sp_14_18"
+                    android:text="" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:layout_margin="3dp"
+                android:layout_height="@dimen/top_bar_height_35_45"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.3"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_14_18"
+                    android:text="脫模間距：" />
+
+                <EditText
+                    android:singleLine="true"
+                    android:id="@+id/ed_tuomo_jianju"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.7"
+                    android:layout_height="wrap_content"
+                    android:hint="範圍用+/-或~"
+                    android:textSize="@dimen/sp_14_18"
+                    android:text="" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:layout_margin="3dp"
+                android:layout_height="@dimen/top_bar_height_35_45"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.3"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_14_18"
+                    android:text="自動擦網頻率：" />
+
+                <EditText
+                    android:singleLine="true"
+                    android:id="@+id/ed_auto_pinlv"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.7"
+                    android:layout_height="wrap_content"
+                    android:hint="範圍用+/-或~"
+                    android:textSize="@dimen/sp_14_18"
+                    android:text="" />
+            </LinearLayout> 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:layout_margin="3dp"
+                android:layout_height="@dimen/top_bar_height_35_45"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.3"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_14_18"
+                    android:text="刮刀長度：" />
+
+                <EditText
+                    android:singleLine="true"
+                    android:id="@+id/ed_guadao_changdu"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.7"
+                    android:layout_height="wrap_content"
+                    android:hint="範圍用+/-或~"
+                    android:textSize="@dimen/sp_14_18"
+                    android:text="" />
+            </LinearLayout> 
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/layout_huihanlu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:layout_margin="3dp"
+                android:layout_height="@dimen/top_bar_height_35_45"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.3"
+                    android:gravity="center_vertical"
+                android:layout_margin="3dp"
+                android:layout_height="@dimen/top_bar_height_35_45"
+                    android:textSize="@dimen/sp_14_18"
+                    android:text="ZONE1：" />
+
+                <EditText
+                    android:singleLine="true"
+                    android:id="@+id/ed_zone1"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.7"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_14_18"
+                    android:hint="範圍用+/-或~"
+                    android:text="" />
+            </LinearLayout>
+             <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:layout_margin="3dp"
+                android:layout_height="@dimen/top_bar_height_35_45"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.3"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_14_18"
+                    android:text="ZONE2：" />
+
+                <EditText
+                    android:singleLine="true"
+                    android:id="@+id/ed_zone2"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.7"
+                    android:layout_height="wrap_content"
+                    android:hint="範圍用+/-或~"
+                    android:textSize="@dimen/sp_14_18"
+                    android:text="" />
+            </LinearLayout> 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:layout_margin="3dp"
+                android:layout_height="@dimen/top_bar_height_35_45"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.3"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_14_18"
+                    android:text="ZONE3：" />
+
+                <EditText
+                    android:singleLine="true"
+                    android:id="@+id/ed_zone3"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.7"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_14_18"
+                    android:hint="範圍用+/-或~"
+                    android:text="" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:layout_margin="3dp"
+                android:layout_height="@dimen/top_bar_height_35_45"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.3"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_14_18"
+                    android:text="ZONE4：" />
+
+                <EditText
+                    android:singleLine="true"
+                    android:id="@+id/ed_zone4"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.7"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_14_18"
+                    android:hint="範圍用+/-或~"
+                    android:text="" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:layout_margin="3dp"
+                android:layout_height="@dimen/top_bar_height_35_45"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.3"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_14_18"
+                    android:text="ZONE5：" />
+
+                <EditText
+                    android:singleLine="true"
+                    android:id="@+id/ed_zone5"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.7"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_14_18"
+                    android:hint="範圍用+/-或~"
+                    android:text="" />
+            </LinearLayout> 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:layout_margin="3dp"
+                android:layout_height="@dimen/top_bar_height_35_45"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.3"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_14_18"
+                    android:text="ZONE6：" />
+
+                <EditText
+                    android:singleLine="true"
+                    android:id="@+id/ed_zone6"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.7"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_14_18"
+                    android:hint="範圍用+/-或~"
+                    android:text="" />
+            </LinearLayout> 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:layout_margin="3dp"
+                android:layout_height="@dimen/top_bar_height_35_45"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.3"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_14_18"
+                    android:text="ZONE7：" />
+
+                <EditText
+                    android:singleLine="true"
+                    android:id="@+id/ed_zone7"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.7"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_14_18"
+                    android:hint="範圍用+/-或~"
+                    android:text="" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:layout_margin="3dp"
+                android:layout_height="@dimen/top_bar_height_35_45"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.3"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_14_18"
+                    android:text="ZONE8：" />
+
+                <EditText
+                    android:singleLine="true"
+                    android:id="@+id/ed_zone8"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.7"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_14_18"
+                    android:hint="範圍用+/-或~"
+                    android:text="" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:layout_margin="3dp"
+                android:layout_height="@dimen/top_bar_height_35_45"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.3"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_14_18"
+                    android:text="ZONE9：" />
+
+                <EditText
+                    android:singleLine="true"
+                    android:id="@+id/ed_zone9"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.7"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_14_18"
+                    android:hint="範圍用+/-或~"
+                    android:text="" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:layout_margin="3dp"
+                android:layout_height="@dimen/top_bar_height_35_45"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.3"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_14_18"
+                    android:text="ZONE10：" />
+
+                <EditText
+                    android:singleLine="true"
+                    android:id="@+id/ed_zone10"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.7"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_14_18"
+                    android:hint="範圍用+/-或~"
+                    android:text="" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:layout_margin="3dp"
+                android:layout_height="@dimen/top_bar_height_35_45"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.3"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_14_18"
+                    android:text="ZONE11：" />
+
+                <EditText
+                    android:singleLine="true"
+                    android:id="@+id/ed_zone11"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.7"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_14_18"
+                    android:hint="範圍用+/-或~"
+                    android:text="" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:layout_margin="3dp"
+                android:layout_height="@dimen/top_bar_height_35_45"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.3"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_14_18"
+                    android:text="ZONE12：" />
+
+                <EditText
+                    android:singleLine="true"
+                    android:id="@+id/ed_zone12"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.7"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_14_18"
+                    android:hint="範圍用+/-或~"
+                    android:text="" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:layout_margin="3dp"
+                android:layout_height="@dimen/top_bar_height_35_45"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.3"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_14_18"
+                    android:text="ZONE13：" />
+
+                <EditText
+                    android:singleLine="true"
+                    android:id="@+id/ed_zone13"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.7"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_14_18"
+                    android:hint="範圍用+/-或~"
+                    android:text="" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:layout_margin="3dp"
+                android:layout_height="@dimen/top_bar_height_35_45"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.3"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_14_18"
+                    android:text="SPEED：" />
+
+                <EditText
+                    android:singleLine="true"
+                    android:id="@+id/ed_speed"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.7"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_14_18"
+                    android:hint="範圍用+/-或~"
+                    android:text="" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:layout_margin="3dp"
+                android:layout_height="@dimen/top_bar_height_35_45"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.3"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_14_18"
+                    android:text="FanSpeed：" />
+
+                <EditText
+                    android:singleLine="true"
+                    android:id="@+id/ed_fanspeed"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.7"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_14_18"
+                    android:hint="範圍用+/-或~"
+                    android:text="" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:layout_margin="3dp"
+                android:layout_height="@dimen/top_bar_height_35_45"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.3"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_14_18"
+                    android:text="ShuntValue：" />
+
+                <EditText
+                    android:singleLine="true"
+                    android:id="@+id/ed_shuntvalue"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.7"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_14_18"
+                    android:hint="範圍用+/-或~"
+                    android:text="" />
+            </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:layout_margin="3dp"
+                android:layout_height="@dimen/top_bar_height_35_45"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.3"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_14_18"
+                    android:text="修改人：" />
+
+                <TextView 
+                    android:id="@+id/tv_update_person"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.7"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_14_18"
+                    android:text="" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:layout_margin="3dp"
+                android:layout_height="@dimen/top_bar_height_35_45"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/bt_detailed_up_or_de"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/person_submit"
+                    android:onClick="add"
+                    android:text="提交" />
+                
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

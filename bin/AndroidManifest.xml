@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.zsm.foxconn.mypaperless"
+    android:versionCode="53"
+    android:versionName="2.52.20170228" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="18" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.SYSTEM_OVERLAY_WINDOW" />
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    
+    
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name="com.zsm.foxconn.mypaperless.bean.UserBean"
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:restoreAnyVersion="true"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.zsm.foxconn.mypaperless.MainActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.zsm.foxconn.mypaperless.Checkreport_activity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity android:name="com.zsm.foxconn.mypaperless.Person_Add_personnel" >
+        </activity>
+        <activity
+            android:name="com.zsm.foxconn.mypaperless.Person_Information"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.zsm.foxconn.mypaperless.Person_Feedback"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.zsm.foxconn.mypaperless.Person_My_message"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.zsm.foxconn.mypaperless.Person_Modify_delete"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.zsm.foxconn.mypaperless.Person_Setting_Center"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.zsm.foxconn.mypaperless.Person_Modify_password"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.zsm.foxconn.mypaperless.Person_View_information"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.zsm.foxconn.mypaperless.Aduit_Noinspectinfo"
+            android:label="選項列表" >
+        </activity>
+        <activity
+            android:name="com.zsm.foxconn.mypaperless.Aduit_dialog"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+        <activity android:name="com.zsm.foxconn.mypaperless.AduitActivity" >
+        </activity>
+        <activity android:name="com.zsm.foxconn.mypaperless.Aduit_dialoged" >
+        </activity>
+        <activity android:name="com.zsm.foxconn.mypaperless.CheckPdActivity" >
+        </activity>
+        <activity
+            android:name="com.zsm.foxconn.mypaperless.CheckElectricScrewdriverActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.zsm.foxconn.mypaperless.TorqueDriverCalibrationActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.zsm.foxconn.mypaperless.CheckLabelingMachineActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.zsm.foxconn.mypaperless.CheckReflowOvenActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.zsm.foxconn.mypaperless.CheckAOIActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.zsm.foxconn.mypaperless.CheckIronActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.zsm.foxconn.mypaperless.Examine_all_itemActivity"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.zsm.foxconn.mypaperless.Examine_table_messageActivity"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name="com.zsm.foxconn.mypaperless.Examine_mes_more2Activity"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.zsm.foxconn.mypaperless.Examine_mes_moreActivity"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.zsm.foxconn.mypaperless.Examine_mes_detailActivity"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.zsm.foxconn.mypaperless.Examine_no_check_inquiryActivity"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.zsm.foxconn.mypaperless.Examine_in_advance_Activity"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.zsm.foxconn.mypaperless.Examine_all_itemActivity_tiqian"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.zsm.foxconn.mypaperless.Wellcomactivity"
+            android:label="@string/title_activity_login" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.zsm.foxconn.mypaperless.LoginActivity"
+            android:label="登錄" >
+        </activity>
+        <activity
+            android:name="com.zsm.foxconn.mypaperless.help.ImageShower"
+            android:label="瀏覽器掃碼下載" >
+        </activity>
+        <activity
+            android:name="com.zsm.foxconn.mypaperless.Choose_line_PD"
+            android:label="選擇線別" >
+        </activity>
+        <activity
+            android:name="com.zsm.foxconn.mypaperless.Choose_report"
+            android:label="選擇報表" >
+        </activity>
+        <activity
+            android:name="com.zsm.foxconn.mypaperless.StartCheckedActivity"
+            android:label="開始點檢" >
+        </activity>
+        <activity
+            android:name="com.zsm.qr.CaptureActivity"
+            android:label="二維碼掃描"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.zsm.foxconn.mypaperless.CheckProject_ipqc"
+            android:label="二级条目" >
+        </activity>
+        <activity
+            android:name="com.zsm.foxconn.mypaperless.Choose_line_ipqc"
+            android:label="選擇線別" >
+        </activity>
+        <activity
+            android:name="com.zsm.foxconn.mypaperless.Showchooseline_ipqc"
+            android:label="已选线别" >
+        </activity>
+        <activity
+            android:name="com.zsm.foxconn.mypaperless.Check_Project_ipqc"
+            android:label="ipqc點檢" >
+        </activity>
+        <activity
+            android:name="com.zsm.foxconn.mypaperless.Configuration_report"
+            android:label="報表配置" >
+        </activity>
+        <activity
+            android:name="com.zsm.foxconn.mypaperless.help.CropImageActivity"
+            android:label="截取圖片" >
+        </activity>
+        <activity
+            android:name="com.zsm.foxconn.mypaperless.Add_report"
+            android:label="增加報表"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.zsm.foxconn.mypaperless.Muban_Configuration_report"
+            android:label="模板報表"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.zsm.foxconn.mypaperless.Shuoming_version"
+            android:label="版本說明"
+            android:theme="@android:style/Theme.Holo.Dialog" >
+        </activity>
+        <activity
+            android:name="com.zsm.foxconn.mypaperless.Lianxi_women"
+            android:label="聯繫我們"
+            android:theme="@android:style/Theme.Holo.Dialog" >
+        </activity>
+        <activity
+            android:name="com.zsm.foxconn.mypaperless.Choose_section"
+            android:label="選擇工站"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.zsm.foxconn.mypaperless.Floor_manage"
+            android:label="已有樓層"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.zsm.foxconn.mypaperless.Add_floor"
+            android:label="添加樓層"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.zsm.foxconn.mypaperless.Create_floorQR"
+            android:label="創建二維碼"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.zsm.foxconn.mypaperless.Canshu_Manage"
+            android:label="報表參數"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.zsm.foxconn.mypaperless.MyQR_CODE"
+            android:label="我的二維碼"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.zsm.foxconn.mypaperless.Detailed_canshu"
+            android:label="參數詳情"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.zsm.foxconn.mypaperless.Detailed_update_add"
+            android:label="新增修改參數"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.zsm.foxconn.mypaperless.MyCanshu_news"
+            android:label="我的消息"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.zsm.foxconn.mypaperless.ECheckActivity"
+            android:label="二維碼掃描"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+
+        <service
+            android:name="com.zsm.foxconn.mypaperless.service.TimeServer"
+            android:label="點檢監聽" >
+        </service>
+
+        <receiver
+            android:name="com.zsm.foxconn.mypaperless.broadcast.TimeBrocast"
+            android:enabled="true"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="fromTimeServer" />
+                <action android:name="fromConnectedServer" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.zsm.foxconn.mypaperless.AlarmSettingAgain"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustNothing" >
+        </activity>
+        <activity
+            android:name="com.zsm.foxconn.mypaperless.ChartListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustNothing" >
+        </activity>
+        <activity
+            android:name="com.zsm.foxconn.mypaperless.MoistureproofChartActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustNothing" >
+        </activity>
+        <activity
+            android:name="com.zsm.foxconn.mypaperless.EnvironmentChartActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustNothing" >
+        </activity>
+        <activity
+            android:name="com.zsm.foxconn.mypaperless.Examine_table_piliangcheck"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustNothing" >
+        </activity>
+        <activity
+            android:name="com.zsm.foxconn.mypaperless.AnotherBarActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustNothing" >
+        </activity>
+        <activity
+            android:name="com.zsm.foxconn.mypaperless.CheckSituationActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustNothing" >
+        </activity>
+        <activity
+            android:name="com.zsm.foxconn.mypaperless.Forgetpwd"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustNothing" >
+        </activity>
+        <activity
+            android:name="com.zsm.foxconn.mypaperless.Canshu_Manage_bofenghan"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustNothing" >
+        </activity>
+        <activity
+            android:name="com.zsm.foxconn.mypaperless.Detailed_canshu_bofenghan"
+            android:label="波峰焊參數詳情"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.zsm.foxconn.mypaperless.AbnormalRightFragment"
+            android:label="title_activity_abnormal" >
+        </activity>
+        <activity
+            android:name="com.zsm.foxconn.mypaperless.Abnormal_left_itemActivity"
+            android:label="title_activity_abnormal_item"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.zsm.foxconn.mypaperless.AbnormalFragmentActivity"
+            android:label="title_activity_abnormal_fragment" >
+        </activity>
+        <activity
+            android:name="com.zsm.foxconn.mypaperless.Abnormal_right_itemActivity"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="stateHidden"
+            android:label="title_Abnormal_right_itemActivity" >
+        </activity>
+        <activity
+            android:name="com.zsm.foxconn.mypaperless.ModifyCheckActivity"
+            android:hardwareAccelerated="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustNothing" >
+        </activity>
+        <activity
+            android:name="com.zsm.foxconn.mypaperless.Tiqianweihu_Byline"
+            android:hardwareAccelerated="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustNothing" >
+        </activity>
+        <activity
+            android:name="com.zsm.foxconn.mypaperless.Tiqianweihu_ByQRcode"
+            android:hardwareAccelerated="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustNothing" >
+        </activity>
+        <activity
+            android:name="com.zsm.foxconn.mypaperless.Check_UpActivity"
+            android:label="補點檢"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name="com.zsm.foxconn.mypaperless.Check_Up_ECheckActivity"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name="com.zsm.foxconn.mypaperless.Check_Up_CheckPdActivity"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name="com.zsm.foxconn.mypaperless.CheckSitActivity"
+            android:label="點檢狀況-已點檢、未點檢、責任主管"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name="com.zsm.foxconn.mypaperless.IPQC_CrossBU_Issue"
+            android:label="IPQC TOP ISSUE"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name="com.zsm.foxconn.mypaperless.IPQC_Issue_Info"
+            android:label="IPQC TOP ISSUE INFO"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+    </application>
+
+</manifest>

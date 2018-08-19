@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical" >
+   <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.35"
+        android:background="#A8CB72"
+        android:gravity="center_vertical" >
+
+        <include
+            android:layout_weight="1"
+            layout="@layout/top_bar_item_pd" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:orientation="vertical" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/smt_open"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="SMT开换线及首件点检表" />
+
+            <Button
+                android:id="@+id/smt_aot"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="SMT AOT每日点检保养记录表" />
+
+            <Button
+                android:id="@+id/smt_black_day"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="SMT回焊炉日保养点检表" />
+
+            <Button
+                android:id="@+id/smt_black_aweek"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="SMT回焊炉周保养点检表" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/pth_open"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="PTH开换线首件点检表" />
+
+            <Button
+                android:id="@+id/pth_set"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="PTH投板插件及波峰焊开换线点检表" />
+
+            <Button
+                android:id="@+id/pth_yahe"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="PTH压合工站开换线点检表" />
+
+            <Button
+                android:id="@+id/pth_bofeng_day"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="PTH波峰焊日保养记录表" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/pth_feng_open"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="PTH分板开换线点检表" />
+
+            <Button
+                android:id="@+id/assy_open"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="ASSY开换线点检表" />
+
+            <Button
+                android:id="@+id/pack_open"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="PACK开换线点检表" />
+
+            <Button
+                android:id="@+id/barcode_day"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="条码打印每日点检保养记录表" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/sfpg_gong_day"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="SFPG工装板线日点检保养表" />
+
+            <Button
+                android:id="@+id/ion_aweek"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="离子发生器周点检表" />
+
+            <Button
+                android:id="@+id/wind_spear"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="烙铁及热风枪点检表" />
+
+            <Button
+                android:id="@+id/electricity_table"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="电动起子点检表" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/smt_check_black"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="SMT巡回检查记录表" />
+
+            <Button
+                android:id="@+id/pth_check_black"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="PTH巡回检查记录表" />
+
+            <Button
+                android:id="@+id/assy_check_black"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="ASSY巡回检查记录表" />
+
+            <Button
+                android:id="@+id/pack_check_black"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="PACK巡回检查记录表" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+</LinearLayout>

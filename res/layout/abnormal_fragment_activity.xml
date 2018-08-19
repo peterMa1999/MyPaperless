@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_bar_height"
+        android:background="#3BB715"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/top_bar_height_35"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="異常列表"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/sp_20" />
+
+        <ImageButton
+            android:id="@+id/activity_back"
+            android:layout_width="@dimen/top_bar_height_35"
+            android:layout_height="@dimen/top_bar_height_35"
+            android:layout_alignBottom="@+id/textView1"
+            android:layout_alignParentLeft="true"
+            android:background="@null"
+            android:onClick="back"
+            android:src="@drawable/back_click_seletor" />
+    </RelativeLayout>
+    <LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="54dp"
+	    android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/deal_tv"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/shape_login_change2"
+            android:gravity="center"
+            android:text="创建"
+            android:textColor="#1495D1"
+            android:textSize="12dp" />
+
+		<TextView
+		    android:layout_margin="5dp"
+		    android:id="@+id/replay_tv"
+		    android:layout_width="0dp"
+		    android:layout_weight="1"
+		    android:layout_height="match_parent"
+		    android:gravity="center"
+		    android:textSize="12dp"
+		    android:textColor="#CBCBCB"
+		    android:background="@drawable/shape_login"
+		    android:text="处理" />
+
+	</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+        <FrameLayout 
+            android:id="@+id/abnoemal_Fram"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+    </LinearLayout>
+
+</LinearLayout>

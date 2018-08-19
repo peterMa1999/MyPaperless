@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/top_bar_height"
+    android:background="#3BB715" >
+
+    <TextView
+        android:id="@+id/head_title"
+        style="@style/head_text_styles"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:textSize="@dimen/sp_18_seletor"
+        android:text="@string/app_name" />
+
+    <ImageButton
+        android:id="@+id/head_back"
+        style="@style/head_btn_styles"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="5dp"
+        android:onClick="returnClick"
+        android:src="@drawable/back_click_seletor" />
+
+    	<CheckBox
+    	    android:id="@+id/tv_all"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:layout_alignBottom="@+id/head_title"
+    	    android:layout_alignParentRight="true"
+    	    android:background="@null"
+    	    android:button="@drawable/bt_checkbox_login2"
+    	    android:checked="false"
+    	    android:text="全选"
+    	    android:textSize="@dimen/sp_16_20" />
+
+</RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.92"
+         >
+
+        <ExpandableListView
+            android:id="@+id/configguration_edlist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+             >
+        </ExpandableListView>
+
+    </LinearLayout>
+	<LinearLayout
+        android:id="@+id/ll_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.08"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center_vertical"
+        android:background="@color/white"
+        android:visibility="gone"
+        >
+		<Button
+        android:id="@+id/submitbt"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="10dp" 
+        android:textSize="@dimen/sp_16_20"
+        android:text="保存"
+        android:background="#3BB715"
+        android:gravity="center"
+         />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_bar_height"
+        android:background="#3BB715"
+        android:gravity="center_vertical" >
+
+        <include layout="@layout/top_bar_item_pd" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="5"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:text="@string/message_node_numbertv"
+                android:textColor="@color/back"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text="@string/message_Check_numbertv"
+                android:textColor="@color/back"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/message_produce_persontv"
+                android:textColor="@color/back"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.75"
+                android:gravity="center"
+                android:text="@string/message_more_status"
+                android:textColor="@color/back"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/image_dowbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/btn_tou" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="13"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <View
+                android:id="@+id/view_dow_more"
+                android:layout_width="fill_parent"
+                android:layout_height="1.5dp"
+                android:background="@color/green" />
+
+            <ExpandableListView
+                android:id="@+id/examine_more_listView"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:divider="@null"
+                android:groupIndicator="@null" >
+            </ExpandableListView>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

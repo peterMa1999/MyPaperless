@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="color1">#ffff0000</color>
+    <!-- 紅 -->
+    <color name="color2">#ffff6600</color>
+    <!-- 橙 -->
+    <color name="color3">#ffffff00</color>
+    <!-- 黃 -->
+    <color name="color4">#ff00ff00</color>
+    <!-- 綠 -->
+    <color name="color5">#ff00ffff</color>
+    <!-- 青 -->
+    <color name="color6">#ff0000ff</color>
+    <!-- 藍 -->
+    <color name="color7">#ff6600ff</color>
+    <!-- 紫 -->
+    <color name="white">#ffffffff</color>
+    <!-- 白 -->
+    <color name="green">#7bb15f</color>
+    <!-- 绿 -->
+    <color name="back">#000</color>
+    <!-- 黑 -->
+    <color name="color9">#778899</color>
+    <!-- 亮藍 -->
+    <color name="color10">#bc8f8f</color>
+    <!-- 褐玫瑰紅 -->
+    <color name="color11">#ffebcd</color>
+    <!-- 白杏 -->
+    <color name="color12">#a9a9a9</color>
+    <!-- 灰色 -->
+    <color name="color13">#add8e6</color>
+    <!-- 亮藍 -->
+    <color name="color14">#f5deb3</color>
+    <!-- 沙褐色 -->
+    <color name="color15">#f5f5dc</color>
+    <!-- 淺黃色 -->
+    <color name="color16">#eee8aa</color>
+    <!-- 麒麟色 -->
+    <color name="color17">#DDDDDD</color>
+    <!-- 浅灰色 -->
+    <color name="blue">#3594dd</color>
+    <color name="tou">#00ffffff</color>
+ <!-- 白透 -->
+    <!-- 蓝色 -->
+    <color name="blue2">#87CEEB</color>
+    <!-- 蓝色 -->
+    <color name="blue3">#ADD8E6</color>
+    <!-- 蓝色 -->
+    <color name="bottom_text_color_nor">#7D7D7D</color>
+    <!-- 灰色 -->
+    <color name="bottom_text_color_select">#3BB715</color>
+    <!-- 绿色 -->
+    <color name="listitem_transparent">#00000000</color>
+    <color name="icar_cropimage_background">#737373</color>
+    <color name="button_bg">#A77073</color>
+    <color name="yello">#ffff00</color>
+    <color name="grap">#888888</color>
+    <color name="baise">#D9D9D9</color>
+    <color name="red">#ff0000</color>
+    <color name="bg_color">#EDEDED</color>
+    <color name="contents_text">#ff000000</color>
+    <color name="encode_view">#ffffffff</color>
+    <color name="help_button_view">#ffcccccc</color>
+    <color name="help_view">#ff404040</color>
+    <color name="possible_result_points">#c0ffff00</color>
+    <color name="result_image_border">#ffffffff</color>
+    <color name="result_minor_text">#ffc0c0c0</color>
+    <color name="result_points">#c000ff00</color>
+    <color name="result_text">#ffffffff</color>
+    <color name="result_view">#b0000000</color>
+    <color name="sbc_header_text">#ff808080</color>
+    <color name="sbc_header_view">#ffffffff</color>
+    <color name="sbc_list_item">#fffff0e0</color>
+    <color name="sbc_layout_view">#ffffffff</color>
+    <color name="sbc_page_number_text">#ff000000</color>
+    <color name="sbc_snippet_text">#ff4b4b4b</color>
+    <color name="share_text">#ff000000</color>
+    <color name="share_view">#ffffffff</color>
+    <color name="status_view">#50000000</color>
+    <color name="status_text">#ffffffff</color>
+    <color name="transparent">#00000000</color>
+    <color name="viewfinder_frame">#ff000000</color>
+    <color name="viewfinder_laser">#ffff0000</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="header">#58567D</color>
+    <color name="grgray">#686868</color>
+    <color name="greyb">#ffdedede</color>
+    <color name="blueb">#ff0099cc</color>
+    <color name="yellowb">#eac873</color>
+    <color name="redb">#ffff4444</color>
+    <color name="greenb">#ff99cc00</color>
+    <color name="whiteb">#ffffffff</color>
+    <color name="bkg">#ff6c00</color>
+	<color name="orange2">#138B0A</color>
+	
+	<color name="white2">#fafafa</color>
+	<color name="white_dark">#f3f3f3</color>
+	<color name="gray_light">#cccccc</color>
+	<color name="gray">#777</color>
+	<color name="gray_dark">#383838</color>
+	<color name="green_light">#8e9ea4</color>
+	<color name="green2">#34515c</color>
+	<color name="green_dark">#1e3e4a</color>
+	<color name="night_mask">#90000000</color>
+	<color name="huise">#6B6B5F</color>
+	<!-- 宫格位置 -->
+    <color name="griditems_bg">#ffffff</color>
+    <color name="commo_text_color">#ff333333</color>
+    <color name="line">#ffd3dde6</color>
+    
+</resources>
